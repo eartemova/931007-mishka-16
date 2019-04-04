@@ -14,7 +14,7 @@
       </a>
       <nav class="main-nav">
         <button type="button" class="main-nav__button btn btn--nav">Меню</button>
-        <div class="container">
+        <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Вязание на заказ</a></li>
@@ -79,7 +79,7 @@
                 <ul class="reviews__list">
                   <li class="reviews__item">
                     <q class="reviews__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</q>
-                    <span class="reviews__name">Анастасия Красильникова</span>
+                    <cite class="reviews__name">Анастасия Красильникова</cite>
                     <a href="#" class="reviews__link">@misssssiskras</a>
                   </li>
                 </ul>
@@ -129,5 +129,28 @@
         </a>
       </div>
     </footer>
+    <section class="modal">
+      <h2 class="header-secondary">Добавить в корзину</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-form__fieldset modal-form__fieldset--radio">
+            <legend class="modal-form__legend modal-form__legend--radio">Выберите размер:</legend>
+            <ul class="modal-form__list">
+              <li class="modal-form__item">
+                <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-s" value="small" checked>
+                <label class="modal-form__label modal-form__label--radio" for="size-s">Small</label>
+              </li>
+              <li class="modal__modal-form-item">
+                <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-m" value="medium">
+                <label class="modal-form__label modal-form__label--radio" for="size-m">Medium</label>
+              </li>
+              <li class="modal__modal-form-item">
+                <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-l" value="large">
+                <label class="modal-form__label modal-form__label--radio" for="size-l">Large</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn btn-seafoam-blue btn__modal-form" type="submit">Добавить</button>
+        </form>
+    </section>
   </body>
 </html>
