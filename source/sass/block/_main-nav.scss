@@ -34,17 +34,17 @@
   }
 
   .main-nav__link {
-    color: $color-txt-main;
+    color: $color-text-main;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.41;
 
     &:hover {
-      color: $color-txt-main-hover;
+      color: $color-text-main-hover;
     }
 
     &:active {
-      color: $color-txt-main-active;
+      color: $color-text-main-active;
     }
   }
 }
