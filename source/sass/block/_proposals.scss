@@ -35,19 +35,13 @@
     color: #ffffff;
     text-decoration: none;
 
-      &--interior {
-        background-color: $color-btn-add1;
-      }
-      &--toys {
-        background-color: $color-btn-add2;
-        margin-bottom: 34px;
-      }
+    &--interior {
+      background-color: $color-btn-add1;
+    }
+
+    &--toys {
+      background-color: $color-btn-add2;
+      margin-bottom: 34px;
+    }
   }
-      /*
-      &:hover {
-          transform:
-        }
-      &--interior::after {
-        <svg></svg>
-        }*/
 }

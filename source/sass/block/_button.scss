@@ -12,16 +12,16 @@
 
   &--white {
     color: $color-text-paragraph;
-    background:#ffffff;
+    background-color: $bg-main;
 
     &:hover {
       color: $color-text-main;
-      background-color: $color-btn-main-hover
+      background-color: $color-btn-main-hover;
     }
 
     &:active {
       color: $color-text-main-active;
-      background-color: $color-btn-main-hover
+      background-color: $color-btn-main-hover;
     }
   }
 }
