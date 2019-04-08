@@ -1,0 +1,41 @@
+.favorites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 320px;
+  margin: auto;
+  text-align: left;
+}
+
+.favorites__moto {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: #63d1bb;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.favorites__discription {
+  color: #444444;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 34px;
+}
+
+.favorites__spec {
+  display: table;
+  color: #444444;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.33;
+}
+
+.favorites__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.41;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.product-card {
+  text-align: left;
+  /*
+  .product-card__text {
+
+  }
+
+  .product-card__link {
+
+  }  */
+  .product-card__name {
+    color: $color-text-main; /* я не знаю, что тут еще написать, но если ничего не напишу дальше не пойдет*/
+
+    &:hover {
+      color: $color-text-main-hover;
+    }
+
+    &:active {
+      color: $color-text-main-active;
+    }
+  }
+
+  .product-card__discription {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2.31;
+  }
+  /*
+  .product-card__buy {
+
+  }*/
+
+  .product-card__price {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  /*
+  .product-card__basket {
+
+  } */
+}

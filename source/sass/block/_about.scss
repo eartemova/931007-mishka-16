@@ -1,0 +1,15 @@
+.about {
+  text-align: left;
+
+  .about__list {
+    list-style: none;
+  }
+
+  .about__item {
+    width: 250px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.18;
+    padding-top: 85px;
+  }
+}

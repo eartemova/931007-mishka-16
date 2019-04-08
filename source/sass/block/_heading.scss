@@ -1,0 +1,20 @@
+.heading {
+  font-weight: 700;
+  font-style: normal;
+  color: $color-text-main;
+
+  &--primary {
+    font-size: 27px;
+    line-height: 1.11;
+  }
+
+  &--secondary {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  &--tertialy {
+    font-size: 17px;
+    line-height: 1.41;
+  }
+}

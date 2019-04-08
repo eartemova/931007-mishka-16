@@ -1,0 +1,10 @@
+
+.page-footer {
+  width: 320px;
+  min-height: 160px;
+  background-color: $bg-footer;
+
+  .page-footer__copyright {
+    display: flex;
+  }
+}
