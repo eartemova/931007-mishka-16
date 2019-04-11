@@ -9,8 +9,6 @@
 
   }  */
   .product-card__name {
-    color: $color-text-main; /* я не знаю, что тут еще написать, но если ничего не напишу дальше не пойдет*/
-
     &:hover {
       color: $color-text-main-hover;
     }
@@ -39,4 +37,28 @@
   .product-card__basket {
 
   } */
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-card__link {
+    min-width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card__link {
+    width: 316px;
+    min-height: 462px;
+    background-color: aqua;// временно
+  }
 }

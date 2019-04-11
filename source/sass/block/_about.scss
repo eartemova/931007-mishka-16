@@ -3,13 +3,19 @@
 
   .about__list {
     list-style: none;
+    padding: 0;
   }
 
   .about__item {
-    width: 250px;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
     padding-top: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about__list {
+    column-count: 2;
   }
 }

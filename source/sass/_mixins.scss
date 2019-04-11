@@ -1,7 +1,26 @@
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin container320 {
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+}
+
+@mixin container768 {
+  width: 768px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+}
+
+@mixin container1200 {
+  width: 1200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
 }

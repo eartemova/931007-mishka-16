@@ -6,6 +6,10 @@
 *.pdf
 *.psd
 *.sublime*
+_! temp !.scss
+Mishka Index Mobile Menu.png
+Mishka Index Tablet.png
+Mishka index Desktop.png
 node_modules/
 npm-debug.*
 source/css/*.css

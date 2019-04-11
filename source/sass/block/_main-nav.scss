@@ -1,36 +1,35 @@
 .main-nav {
-  width: 320px;
-  background-color: $bg-main;
+  background-color: transparent;
   position: relative;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
 
   .main-nav__button {
-    display: flex;
+    display: block;
     position: absolute;
-    top: -50px; /* Временный размер*/
+    top: 5px; /* Временный размер*/
     right: 30px;
     width: 60px; /* Временный размер*/
     height: 20px;
   }
 
-  .main-nav__wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  .main-nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    vertical-align: middle;
-    list-style: none;
-  }
-
   .main-nav__item {
     width: 100%;
     min-height: 79px;
-    padding-left: 5px;
-    padding-right: 5px;
+  }
+
+  .main-nav__list-offer,
+  .main-nav__list-user {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .main-nav__list-promo {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
   }
 
   .main-nav__link {
@@ -45,6 +44,108 @@
 
     &:active {
       color: $color-text-main-active;
+    }
+  }
+
+  .main-nav__delivery {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .main-nav__list-offer,
+    .main-nav__list-user {
+      display: flex;
+    }
+
+    .main-nav__list-offer {
+      display: flex;
+      order: 3;
+      width: 50%;
+    }
+
+    .main-nav__list-user {
+      display: flex;
+      order: 2;
+    }
+
+    .main-nav__list {
+      width: 768px;
+    }
+
+    .main-nav__item--catalog,
+    .main-nav__item--knitting {
+      padding-top: 20px;
+    }
+
+    .main-nav__item--basket {
+      width: 280px;
+      text-align: right;
+      padding-top: 20px;
+    }
+
+    .main-nav__delivery {
+      display: inline-block;
+      width: 333px;
+      min-height: 79px;
+      order: 4;
+      text-align: right;
+      padding-top: 20px;
+    }
+
+    .main-nav__item--search {
+      width: 65px;
+    }
+
+    .main-nav__link--search {
+      font-size: 0;
+      color: transparent;
+    }
+
+    .main-nav__button {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    .main-nav__list-promo {
+      display: flex;
+      order: 4;
+    }
+
+    .main-nav__list-offer {
+      order: 1;
+      width: 40%;
+    }
+
+    .main-nav__list-user {
+      order: 4;
+    }
+
+    .main-nav__link--new-arrivals,
+    .main-nav__link--sale {
+      display: inline-block;
+      width: 250px;
+      padding-top: 20px;
+    }
+
+    .main-nav__item--search {
+      width: 80px;
+      font-size: 0;
+    }
+
+    .main-nav__item--basket {
+      width: 280px;
+    }
+
+    .main-nav__delivery {
+      width: 600px;
+      background-color: transparent;
     }
   }
 }
