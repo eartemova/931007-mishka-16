@@ -6,6 +6,11 @@
   &--primary {
     font-size: 27px;
     line-height: 1.11;
+
+    @media (min-width: $tablet-width) {
+      font-size: 43px;
+      line-height: 1.16;
+    }
   }
 
   &--secondary {

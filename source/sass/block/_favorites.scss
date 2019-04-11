@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 320px;
   margin: auto;
   text-align: left;
 }
@@ -38,4 +37,11 @@
   font-weight: 700;
   line-height: 1.41;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .favorites__moto {
+    width: 76px;
+    padding-left: 300px;
+  }
 }

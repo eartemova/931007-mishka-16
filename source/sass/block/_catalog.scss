@@ -1,12 +1,31 @@
-.catalog {
-  width: 320px;
 
-  .catalog__list {
-    list-style: none;
+.container__catalog {
+  @include container320;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include container768;
   }
 
-  .catalog__item {
-    text-align: center;
-    list-style: none;
+  @media (min-width: $desktop-width) {
+    @include container1200;
+  }
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  text-align: center;
+  list-style: none;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
   }
 }
