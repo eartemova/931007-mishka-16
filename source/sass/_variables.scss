@@ -1,7 +1,7 @@
 //COLORS
 
 $bg-main:#ffffff;
-$bg-top:#f1f1f1;
+$bg-top:#f9f9f9;
 $bg-footer:#f1f1f1;
 
 $color-text-main:#000000;
@@ -18,13 +18,16 @@ $color-btn-main:#ffffff;
 $color-btn-main-hover:#444444;
 
 
-$color-btn-add1:#59d5bc;
-$color-btn-add2: #46c1ae;
+$color-btn-add1: #63d1bb;
+$color-btn-add1-hover:#59d5bc;
+$color-btn-add2: #56c3b2;
+$color-btn-add2-hover: #46c1ae;
 
 //VIEWPORT
 
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
 
 /*
 $blue-base: #66ccff;

@@ -1,5 +1,8 @@
+/*--------------------------------- ABOUT/КОРОТКО О НАС ------------------------------------------*/
+
 .about {
   text-align: left;
+  padding-top: 69px;
 
   .about__list {
     list-style: none;
@@ -10,12 +13,163 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
-    padding-top: 85px;
-  }
-}
+    padding-top: 70px;
+    padding-bottom: 13px;
+    position: relative;
 
-@media (min-width: $tablet-width) {
-  .about__list {
-    column-count: 2;
+    &--eco::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+      top: 16px;
+      left: 9px;
+      opacity: 1;
+    }
+
+    &--style::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-money.svg");
+      fill: $color-btn-add1;
+      width: 47px;
+      height: 27px;
+      top: 16px;
+      left: 1px;
+      opacity: 1;
+    }
+
+    &--like::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-heart.svg");
+      fill: $color-btn-add1;
+      width: 33px;
+      height: 27px;
+      top: 21px;
+      left: 9px;
+      opacity: 1;
+    }
+
+    &--handmade::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-ball.svg");
+      fill: $color-btn-add1;
+      width: 35px;
+      height: 34px;
+      top: 17px;
+      left: 4px;
+      opacity: 1;
+    }
+
+    &--local::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-rocket.svg");
+      fill: $color-btn-add1;
+      width: 55px;
+      height: 23px;
+      top: 19px;
+      left: -5px;
+      opacity: 1;
+    }
+
+    &--gift::before {
+      @include pseudo;
+      background-image: url("../img/icon-feature-gift.svg");
+      fill: $color-btn-add1;
+      width: 33px;
+      height: 32px;
+      top: 17px;
+      left: 4px;
+      opacity: 1;
+    }
+  }
+
+  /*--------------------------------- КABOUT/КОРОТКО О НАС - ПЛАНШЕТ ---------------------------------------*/
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+
+    .about__list {
+      column-count: 2;
+      margin-top: 0;
+      column-gap: 0;
+    }
+
+    .about__item {
+      font-size: 20px;
+      line-height: 1.1;
+      text-align: left;
+      padding-top: 101px;
+
+      &--eco::before {
+        top: 50px;
+      }
+
+      &--style::before {
+        @include pseudo;
+        top: 48px;
+      }
+
+      &--like::before {
+        @include pseudo;
+        top: 50px;
+      }
+
+      &--handmade::before {
+        @include pseudo;
+        top: 53px;
+      }
+
+      &--local::before {
+        @include pseudo;
+        top: 51px;
+      }
+
+      &--gift::before {
+        top: 46px;
+      }
+    }
+  }
+
+  /*--------------------------------- ABOUT/КОРОТКО О НАС - ДЕСКТОП ---------------------------------------*/
+
+  @media (min-width: $desktop-width) {
+    margin-top: 86px;
+    margin-right: 0;
+    padding-left: 170px;
+
+    .about__list {
+      margin-left: 5px;
+      margin-top: 4px;
+      width: 700px;
+    }
+
+    .about__item {
+      padding-top: 98px;
+      width: 250px;
+
+      &--eco::before {
+        top: 44px;
+      }
+
+      &--style::before {
+        top: 46px;
+      }
+
+      &--like::before {
+        top: 50px;
+      }
+
+      &--handmade::before {
+        top: 48px;
+      }
+
+      &--local::before {
+        top: 49px;
+      }
+
+      &--gift::before {
+        top: 46px;
+      }
+    }
   }
 }

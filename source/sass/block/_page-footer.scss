@@ -1,41 +1,59 @@
+// ФУТЕР
 
 .page-footer {
   width: 100%;
   min-height: 160px;
   background-color: $bg-footer;
+  margin-top: 40px;
+
+  .page-footer__logo {
+    display: none;
+  }
 
   .page-footer__copyright {
     display: flex;
   }
-}
 
-.page-footer__logo {
-  display: none;
-}
+  .page-footer__container {
+    @include container320;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.page-footer__container {
-  @include container320;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  /*--------------------------------- ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
 
   @media (min-width: $tablet-width) {
-    @include container768;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include container1200;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 58px;
+    padding-top: 50px;
+
+    .page-footer__container {
+      @include container768;
+    }
+
+    .page-footer__logo {
+      display: block;
+
+      &:hover {
+        fill: #46c1ae;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
-  .page-footer__logo {
-    display: block;
+  /*--------------------------------- ФУТЕР - ДЕСКТОП ---------------------------------------*/
+
+  @media (min-width: $desktop-width) {
+    margin-top: 106px;
+
+    .page-footer__container {
+      @include container1150;
+    }
   }
 }

@@ -1,16 +1,18 @@
 .page-top {
-  width: 100%;
+  width: 320px;
   text-align: center;
   margin: 0 auto;
-  background-color: #f1f1f1;
+  background-color: $bg-top;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   &--index {
     min-height: 282px;
-    background-image: url("../../img/hero-mobile@1x.jpg");
-    background-color: #ffffff;
-    background-size: auto auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: $bg-top url("../img/hero-mobile@1x.jpg") no-repeat center top;
+
+    @include container320;
+    padding-top: 45px;
+    margin-top: 44px;
+    width: 100%;
   }
 
   &--catalog,
@@ -23,11 +25,12 @@
 @media (min-width: $tablet-width) {
   .page-top {
     &--index {
-      background-image: url("../../img/hero-tablet@1x.jpg");
-      background-size: 100%;
+      background: $bg-top url("../img/hero-tablet@1x.jpg") no-repeat center top;
       min-height: 772px;
-      margin-top: -80px;
-      padding-top: 60px;
+      margin-top: -79px;
+      padding-top: 155px;
+      width: 100%;
+      text-align: center;
     }
 
     &--catalog,
@@ -40,8 +43,17 @@
 
 @media (min-width: $desktop-width) {
   .page-top {
+    .page-top__heading {
+      width: 1050px;
+      margin: 0 auto;
+    }
+
     &--index {
-      background-image: url("../../img/hero-desktop@1x.jpg");
+      background: $bg-top url("../img/hero-desktop@1x.jpg") no-repeat center top;
+      width: 100%;
+      margin-top: -80px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 }

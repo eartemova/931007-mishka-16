@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  @include container1200;
+  @include container1150;
 
   .production__container {
     flex-wrap: wrap;
