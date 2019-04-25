@@ -1,10 +1,10 @@
 // ОТЗЫВЫ
 
 .reviews {
-  padding-top: 25px;
+  padding-top: 32px;
 
   .reviews__body {
-    @include container320;
+    @include container;
   }
 
   .reviews__list {
@@ -22,6 +22,7 @@
     font-size: 15px;
     line-height: 2;
     text-align: left;
+    margin: 0;
   }
 
   .reviews__name {
@@ -67,7 +68,6 @@
     margin-top: 67px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0, 0;
     padding-top: 78px;
     background-size: 350px, 475px;
     min-height: 457px;
@@ -84,7 +84,7 @@
     }
 
     .reviews__body {
-      @include container768;
+      @include container;
       display: flex;
       flex-wrap: wrap;
     }
@@ -100,7 +100,7 @@
       width: 175px;
     }
 
-    .heading {
+    .reviews__heading {
       order: -2;
       margin-left: -4px;
     }
@@ -108,27 +108,26 @@
     .reviews__item {
       display: inline-flex;
       flex-direction: column;
-    }
-
-    .reviews__list {
-      margin-top: -48px;
+      padding-top: 0;
     }
 
     .reviews__comment {
       font-size: 17px;
       line-height: 1.76;
-      margin-top: 22px;
+      margin: 0;
     }
 
     .reviews__name {
+      display: block;
       margin-top: 34px;
       font-size: 18px;
       line-height: 1.33;
+      max-width: 500px;
     }
 
     .reviews__slider--control {
       position: absolute;
-      top: 152px;
+      bottom: 17px;
       right: 0;
       border: none;
     }
@@ -137,7 +136,7 @@
   /*--------------------------------- ОТЗЫВЫ - ДЕСКТОП ---------------------------------------*/
 
   @media (min-width: $desktop-width) {
-    @include container1150;
+    @include container;
     background-position: top 20px left 50px;
     padding-top: 90px;
     margin-top: 58px;
@@ -159,20 +158,17 @@
       margin-left: 175px;
     }
 
-    .heading {
+    .reviews__heading {
       margin-left: -4px;
+      margin-bottom: 0;
     }
 
     .reviews__slider {
-      margin-top: 8px;
+      margin-top: -32px;
     }
 
     .reviews__item {
       padding-top: 0;
-    }
-
-    .reviews__list {
-      margin-top: -40px;
     }
 
     .reviews__comment {
@@ -185,7 +181,7 @@
     .reviews__name {
       margin: 0;
       padding: 0;
-      padding-top: 42px;
+      margin-top: 42px;
     }
 
     .reviews__link {
@@ -196,11 +192,11 @@
 
     .reviews__btn {
       margin-top: 9px;
-      margin-left: 479px;
+      margin-left: 478px;
     }
 
     .reviews__slider--control {
-      top: 65px;
+      bottom: 45px;
     }
   }
 }

@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   margin: 0 auto;
   width: 320px;
+  margin-top: 151px;
 
   .proposals__list {
     list-style: none;
@@ -13,7 +14,7 @@
   }
 
   .proposals__link {
-    @include container320;
+    @include container;
     min-height: 103px;
     display: flex;
     flex-wrap: wrap;
@@ -83,8 +84,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include container768;
-    margin-top: -145px;
+    width: 668px;
+    margin: 0 auto;
+    margin-top: 373px;
 
     .proposals__list {
       display: flex;
@@ -92,17 +94,6 @@
       padding: 0;
       height: 119px;
       position: relative;
-
-      &::after {
-        @include pseudo;
-        background-image: url("../img/bg-zigzag-fill.svg");
-        bottom: -12px;
-        left: 0;
-        height: 24px;
-        width: 768px;
-        background-size: 768px 26px;
-        background-position: 28px;
-      }
     }
 
     .proposals__link {
@@ -132,8 +123,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container1150;
-    margin-top: -145px;
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 358px;
 
     .proposals__link {
       width: 525px;

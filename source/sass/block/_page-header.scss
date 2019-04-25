@@ -3,44 +3,13 @@
   margin: 0 auto;
   background-color: $bg-main;
 
-  .page-header__logo {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 768px;
     padding-left: 50px;
     padding-right: 50px;
-
-    .page-header__logo {
-      min-height: 88px;
-      width: 320px;
-      order: 1;
-      padding-top: 22px;
-      margin: 0;
-      text-align: left;
-    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-
-    .page-header__logo {
-      width: 312px;
-      order: 2;
-      text-align: center;
-      padding-top: 8px;
-      padding-right: 39px;
-    }
   }
 }

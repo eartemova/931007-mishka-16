@@ -3,7 +3,7 @@
 .copyright {
   display: flex;
   margin: 0 auto;
-  padding-top: 11px;
+  padding-top: 17px;
   vertical-align: baseline;
 
   .copyright__text {
@@ -32,10 +32,12 @@
     margin-left: 0;
     justify-content: flex-end;
     width: 206px;
+    padding-top: 13px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 45px;
     width: 397px;
+    padding-top: 10px;
   }
 }

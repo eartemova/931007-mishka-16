@@ -4,6 +4,21 @@
   position: $pos;
 }
 
+@mixin container {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
 @mixin container320 {
   width: 320px;
   padding-left: 30px;

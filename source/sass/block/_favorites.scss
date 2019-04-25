@@ -87,9 +87,9 @@
     }
   }
 
-  .favorites.heading {
-    display: inline-flex;
-    order: 1;
+  .favorites__title {
+    column-span: all;
+    display: flex;
   }
 
   .favorites__moto {
@@ -99,11 +99,6 @@
     padding-left: 144px;
     padding-top: 4px;
     line-height: 1;
-  }
-
-  .favorites__title {
-    column-span: all;
-    display: flex;
   }
 
   .favorites__text {
@@ -169,7 +164,7 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
 
-    .heading {
+    .favorites__heading {
       padding-left: 96px;
       z-index: 2;
     }
