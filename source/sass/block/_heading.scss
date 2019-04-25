@@ -2,6 +2,8 @@
   font-weight: 700;
   font-style: normal;
   color: $color-text-main;
+  margin: 0;
+  padding: 0;
 
   &--primary {
     font-size: 27px;
@@ -11,15 +13,35 @@
       font-size: 43px;
       line-height: 1.16;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1.08;
+    }
   }
 
   &--secondary {
     font-size: 25px;
     line-height: 1.2;
+
+    @media (min-width: $tablet-width) {
+      font-size: 43px;
+      line-height: 1.16;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+      line-height: 1.08;
+    }
   }
 
   &--tertialy {
     font-size: 17px;
     line-height: 1.41;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 1.08;
   }
 }

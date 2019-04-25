@@ -1,0 +1,202 @@
+// ОТЗЫВЫ
+
+.reviews {
+  padding-top: 32px;
+
+  .reviews__body {
+    @include container;
+  }
+
+  .reviews__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .reviews__item {
+    padding-top: 24px;
+  }
+
+  .reviews__comment {
+    quotes: none;
+    font-size: 15px;
+    line-height: 2;
+    text-align: left;
+    margin: 0;
+  }
+
+  .reviews__name {
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.41;
+    text-align: left;
+  }
+
+  .reviews__link {
+    font-size: 17px;
+    line-height: 1.76;
+    text-align: left;
+    color: $color-text-paragraph;
+
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      color: rgba(70, 193, 174, 0.3);
+    }
+  }
+
+  .reviews__slider--control {
+    display: flex;
+    flex-direction: row;
+    margin-top: 31px;
+    margin-bottom: 39px;
+  }
+
+  /*--------------------------------- ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 67px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    padding-top: 78px;
+    background-size: 350px, 475px;
+    min-height: 457px;
+
+    &::after {
+      @include pseudo;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: -15px, 0;
+      bottom: -82px;
+      height: 15px;
+      width: 768px;
+      fill: #f9f9f9;
+      background-size: 768px 20px;
+    }
+
+    .reviews__body {
+      @include container;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .reviews__slider {
+      display: flex;
+      position: relative;
+    }
+
+    .reviews__btn {
+      order: -1;
+      margin-left: auto;
+      width: 175px;
+    }
+
+    .reviews__heading {
+      order: -2;
+      margin-left: -4px;
+    }
+
+    .reviews__item {
+      display: inline-flex;
+      flex-direction: column;
+      padding-top: 0;
+    }
+
+    .reviews__comment {
+      font-size: 17px;
+      line-height: 1.76;
+      margin: 0;
+    }
+
+    .reviews__name {
+      display: block;
+      margin-top: 34px;
+      font-size: 18px;
+      line-height: 1.33;
+      max-width: 500px;
+    }
+
+    .reviews__slider--control {
+      position: absolute;
+      bottom: 17px;
+      right: 0;
+      border: none;
+    }
+  }
+
+  /*--------------------------------- ОТЗЫВЫ - ДЕСКТОП ---------------------------------------*/
+
+  @media (min-width: $desktop-width) {
+    @include container;
+    background-position: top 20px left 50px;
+    padding-top: 90px;
+    margin-top: 58px;
+
+    &::after {
+      background-position: -82px, 0;
+      bottom: -115px;
+      left: 50px;
+      height: 30px;
+      width: 1050px;
+      fill: #f1f1f1;
+      background-size: 1054px 30px;
+    }
+
+    .reviews__body {
+      margin: 0;
+      padding: 0;
+      width: 930px;
+      margin-left: 175px;
+    }
+
+    .reviews__heading {
+      margin-left: -4px;
+      margin-bottom: 0;
+    }
+
+    .reviews__slider {
+      margin-top: -32px;
+    }
+
+    .reviews__item {
+      padding-top: 0;
+    }
+
+    .reviews__comment {
+      margin: 0;
+      padding-right: 80px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .reviews__name {
+      margin: 0;
+      padding: 0;
+      margin-top: 42px;
+    }
+
+    .reviews__link {
+      margin: 0;
+      padding: 0;
+      padding-top: 4px;
+    }
+
+    .reviews__btn {
+      margin-top: 9px;
+      margin-left: 478px;
+    }
+
+    .reviews__slider--control {
+      bottom: 45px;
+    }
+  }
+}

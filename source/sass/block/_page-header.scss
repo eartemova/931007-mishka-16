@@ -3,29 +3,13 @@
   margin: 0 auto;
   background-color: $bg-main;
 
-  .page-header__logo {
-    height: 79px;
-  }
-
   @media (min-width: $tablet-width) {
     width: 768px;
     padding-left: 50px;
     padding-right: 50px;
-
-    .page-header__logo {
-      display: flex;
-      height: 88px;
-      width: 320px;
-      order: 1;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-
-    .page-header__logo {
-      width: 300px;
-      order: 2;
-    }
+    width: 1150px;
   }
 }

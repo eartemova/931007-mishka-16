@@ -1,19 +1,20 @@
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ - ВЯЗАНЫЕ КОРЗИНКИ ---------------------------------------*/
+
 .favorites {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   margin: auto;
   text-align: left;
+  padding-top: 26px;
 }
 
 .favorites__moto {
+  display: inline-block;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.18;
   text-transform: uppercase;
   color: #63d1bb;
-  margin-top: 8px;
-  margin-bottom: 30px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .favorites__discription {
@@ -21,7 +22,7 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 1.6;
-  margin-bottom: 34px;
+  margin-bottom: 18px;
 }
 
 .favorites__spec {
@@ -30,18 +31,180 @@
   font-size: 15px;
   font-weight: normal;
   line-height: 1.33;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 27px;
+}
+
+.favorites__value,
+.favorites__field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 27px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.favorites__pic {
+  margin-bottom: 20px;
 }
 
 .favorites__price {
+  display: block;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.41;
   text-align: center;
+  color: $color-text-paragraph;
 }
 
+.favorites__btn {
+  margin-top: 27px;
+}
+
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ - ПЛАНШЕТ ---------------------------------------*/
+
 @media (min-width: $tablet-width) {
+  .favorites {
+    position: relative;
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &::after {
+      @include pseudo;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-position: -54px, 0;
+      bottom: -68px;
+      left: -50px;
+      height: 15px;
+      width: 768px;
+      fill: #f1f1f1;
+      background-size: 768px 20px;
+    }
+  }
+
+  .favorites__title {
+    column-span: all;
+    display: flex;
+  }
+
   .favorites__moto {
+    display: inline-flex;
+    text-align: center;
     width: 76px;
-    padding-left: 300px;
+    padding-left: 144px;
+    padding-top: 4px;
+    line-height: 1;
+  }
+
+  .favorites__text {
+    display: inline-block;
+    width: 310px;
+    padding-top: 30px;
+  }
+
+  .favorites__discription {
+    font-size: 17px;
+    line-height: 1.76;
+    width: 300px;
+  }
+
+  .favorites__spec {
+    margin-top: 38px;
+    width: 290px;
+  }
+
+  .favorites__value {
+    padding-right: 0;
+  }
+
+  .favorites__field {
+    padding-right: 0;
+  }
+
+  .favorites__pic {
+    position: absolute;
+    top: 152px;
+    right: 0;
+  }
+
+  .favorites__price {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    width: 290px;
+    margin-top: 29px;
+    margin-bottom: 7px;
+  }
+}
+
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ - ДЕСКТОП ---------------------------------------*/
+
+@media (min-width: $desktop-width) {
+  .favorites {
+    margin-top: 78px;
+
+    &::after {
+      background-position: -82px, 0;
+      bottom: -100px;
+      left: 0;
+      height: 30px;
+      width: 1050px;
+      fill: #f1f1f1;
+      background-size: 1054px 30px;
+    }
+  }
+
+  .favorites__title {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .favorites__heading {
+      padding-left: 96px;
+      z-index: 2;
+    }
+  }
+
+  .favorites__moto {
+    padding-left: 46px;
+    padding-top: 15px;
+    margin: 0;
+  }
+
+  .favorites__pic {
+    top: -6px;
+    right: 0;
+    z-index: 1;
+  }
+
+  .favorites__text {
+    padding-top: 49px;
+    margin-left: 174px;
+    margin-bottom: 0;
+  }
+
+  .favorites__discription {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .favorites__spec {
+    margin-top: 50px;
+  }
+
+  .favorites__price {
+    margin-top: 83px;
+    margin-left: 175px;
+    margin-bottom: 0;
+  }
+
+  .favorites__btn {
+    margin-left: 175px;
+    margin-top: 34px;
   }
 }
