@@ -18,24 +18,3 @@
     width: $desktop-width;
   }
 }
-
-@mixin container320 {
-  width: 320px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
-}
-
-@mixin container768 {
-  width: 768px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0 auto;
-}
-
-@mixin container1150 {
-  width: 1150px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0 auto;
-}

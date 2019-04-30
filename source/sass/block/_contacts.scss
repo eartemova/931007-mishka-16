@@ -66,8 +66,9 @@
   }
 
   .contacts__btn {
-    margin-top: 30px;
     font-size: 18px;
+    margin-top: 27px;
+    margin-bottom: 39px;
   }
 
   .contacts__container {
@@ -80,6 +81,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 146px;
     position: relative;
+    padding-bottom: 18px;
 
     .contacts__heading {
       font-size: 43px;
@@ -108,19 +110,6 @@
       width: 230px;
     }
 
-    &::before {
-      @include pseudo;
-      background-image: url("../img/icon-flag.svg");
-      width: 47px;
-      height: 81px;
-      top: -15px;
-      right: 51px;
-    }
-
-    .contacts__container {
-      @include container;
-    }
-
     .contacts__map {
       margin-top: 30px;
 
@@ -135,39 +124,51 @@
       width: 230px;
       font-size: 17px;
     }
+
+    .container {
+      &::before {
+        @include pseudo;
+        background-image: url("../img/icon-flag.svg");
+        width: 47px;
+        height: 81px;
+        top: -15px;
+        right: 51px;
+      }
+    }
   }
 
   /*---------------------------------   КОНТАКТЫ - ДЕСКТОП ---------------------------------------*/
 
   @media (min-width: $desktop-width) {
-    @include container;
     position: relative;
-    margin-top: 251px;
-
-    &::before {
-      left: 113px;
-      top: -9px;
-    }
+    margin-top: 230px;
+    width: 100%;
+    padding-bottom: 68px;
 
     .container {
-      padding-left: 174px;
+      position: relative;
+
+      &::before {
+        left: 113px;
+        top: -8px;
+      }
     }
 
     .contacts__heading {
       font-size: 53px;
       line-height: 1.08;
-      margin-left: -4px;
+      margin-left: 170px;
     }
 
     .contacts__list {
       flex-direction: column;
       margin-top: 51px;
+      margin-left: 174px;
     }
 
     .contacts__container {
-      width: 100%;
       text-align: left;
-      padding-left: 175px;
+      width: 1050px;
     }
 
     .contacts__map {
@@ -175,7 +176,7 @@
       width: 525px;
       height: 457px;
       top: -99px;
-      right: 51px;
+      left: 50%;
 
       &::before {
         top: 146px;
@@ -184,7 +185,8 @@
     }
 
     .contacts__btn {
-      margin-top: 54px;
+      margin-top: 52px;
+      margin-left: 125px;
     }
 
     .contacts__item {

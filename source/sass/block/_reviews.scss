@@ -1,7 +1,7 @@
 // ОТЗЫВЫ
 
 .reviews {
-  padding-top: 32px;
+  padding-top: 24px;
 
   .reviews__body {
     @include container;
@@ -137,13 +137,13 @@
 
   @media (min-width: $desktop-width) {
     @include container;
-    background-position: top 20px left 50px;
+    background-position: top 0 left 50px;
     padding-top: 90px;
-    margin-top: 58px;
+    margin-top: 78px;
 
     &::after {
       background-position: -82px, 0;
-      bottom: -115px;
+      bottom: -94px;
       left: 50px;
       height: 30px;
       width: 1050px;
@@ -156,6 +156,7 @@
       padding: 0;
       width: 930px;
       margin-left: 175px;
+      padding-top: 70px;
     }
 
     .reviews__heading {
@@ -164,7 +165,7 @@
     }
 
     .reviews__slider {
-      margin-top: -32px;
+      margin-top: -51px;
     }
 
     .reviews__item {
@@ -196,7 +197,7 @@
     }
 
     .reviews__slider--control {
-      bottom: 45px;
+      bottom: 65px;
     }
   }
 }

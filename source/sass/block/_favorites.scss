@@ -4,6 +4,19 @@
   margin: auto;
   text-align: left;
   padding-top: 26px;
+  position: relative;
+
+  &::after {
+    @include pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    bottom: -42px;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    fill: #f1f1f1;
+    background-size: 320px 100%;
+    background-repeat: repeat-x;
+  }
 }
 
 .favorites__moto {
@@ -68,7 +81,6 @@
 
 @media (min-width: $tablet-width) {
   .favorites {
-    position: relative;
     padding-top: 46px;
     display: flex;
     flex-direction: column;
