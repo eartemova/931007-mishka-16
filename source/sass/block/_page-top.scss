@@ -9,8 +9,13 @@
   &--index {
     min-height: 282px;
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
-    padding-top: 70px;
+    padding-top: 68px;
     width: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: #f9f9f9 url("../img/hero-mobile@2x.jpg") no-repeat center -18px;
+      background-size: 575px auto;
+    }
   }
 
   &--catalog,
@@ -47,6 +52,11 @@
         background-size: 768px 43px;
         background-position: 2px;
       }
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $bg-top url("../img/hero-tablet@2x.jpg") no-repeat center top;
+        background-size: 1150px auto;
+      }
     }
 
     .page-top__heading {
@@ -78,7 +88,7 @@
       left: 0;
       height: 37px;
       width: 100%;
-      background-size: 1150px 41px;
+      background-size: 1250px 41px;
       background-position: 50%;
     }
 
@@ -98,6 +108,11 @@
       margin-top: -80px;
       padding-left: 50px;
       padding-right: 50px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: $bg-top url("../img/hero-desktop@2x.jpg") no-repeat center top;
+        background-size: 1150px auto;
+      }
     }
   }
 }

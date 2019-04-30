@@ -145,8 +145,18 @@
     fill: #63d1bb;
   }
 
+  .main-nav__link--basket:active svg {
+    opacity: 0.3;
+    fill: #63d1bb;
+  }
+
   .main-nav__link--search:hover svg {
     opacity: 1;
+    fill: #63d1bb;
+  }
+
+  .main-nav__link--search:active svg {
+    opacity: 0.3;
     fill: #63d1bb;
   }
 
@@ -240,7 +250,7 @@
 
     .main-nav__item--search {
       width: 86px;
-      padding-top: 43px;
+      padding-top: 37px;
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
@@ -258,7 +268,7 @@
   /*---------------------------------ГЛАВНАЯ НАВИГАЦИЯ ДЕСКТОП------------------------------------------*/
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
+    width: 1050px;
 
     .main-nav__logo {
       width: 312px;
