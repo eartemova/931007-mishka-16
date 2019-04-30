@@ -83,6 +83,11 @@
       background-size: 768px 20px;
     }
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
     .reviews__body {
       @include container;
       display: flex;
