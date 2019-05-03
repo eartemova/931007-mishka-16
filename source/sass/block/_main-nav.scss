@@ -132,30 +132,19 @@
   }
   // СТИЛИЗАЦИЯ ИКОНОК
 
-  .main-nav__link--search svg,
-  .main-nav__link--basket svg {
+  .main-nav__link--svg {
     position: absolute;
     opacity: 0.2;
     left: -44px;
     top: 2px;
   }
 
-  .main-nav__link--basket:hover svg {
+  .main-nav__link:hover .main-nav__link--svg {
     opacity: 1;
     fill: #63d1bb;
   }
 
-  .main-nav__link--basket:active svg {
-    opacity: 0.3;
-    fill: #63d1bb;
-  }
-
-  .main-nav__link--search:hover svg {
-    opacity: 1;
-    fill: #63d1bb;
-  }
-
-  .main-nav__link--search:active svg {
+  .main-nav__link:active .main-nav__link--svg {
     opacity: 0.3;
     fill: #63d1bb;
   }

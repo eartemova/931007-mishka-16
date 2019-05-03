@@ -6,21 +6,7 @@
   padding-top: 10px;
   vertical-align: baseline;
 
-  .copyright__text {
-    color: $color-text-main;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: left;
-    padding-right: 28px;
-  }
-
-  .copyright__HA--logo {
-    margin-top: -5px;
-  }
-
-  &:hover .copyright__HA--logo {
+  &:hover .copyright__logo {
     fill: #46c1ae;
   }
 
@@ -28,16 +14,31 @@
     opacity: 0.3;
   }
 
+  .copyright__text {
+    color: $color-text-main;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: normal;
+    text-align: left;
+    padding-right: 29px;
+  }
+
+  .copyright__logo {
+    margin-top: -5px;
+    fill: #63d1bb;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 0;
     justify-content: flex-end;
-    width: 206px;
+    width: 207px;
     padding-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 45px;
-    width: 397px;
+    width: 399px;
     padding-top: 10px;
   }
 }
