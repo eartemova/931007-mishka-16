@@ -27,7 +27,7 @@
     padding: 0;
     text-align: left;
     margin: 0;
-    display: block;  // ПЕРЕКЛЮЧАТЕЛЬ МЕНЮ
+    //display: block;  // ПЕРЕКЛЮЧАТЕЛЬ МЕНЮ
   }
 
   .main-nav__item {
@@ -55,6 +55,10 @@
 
     &:hover {
       color: $color-text-main-hover;
+    }
+
+    &:hover .main-nav__link--svg {
+      fill: #63d1bb;
     }
 
     &:active {
@@ -129,17 +133,26 @@
     &--mobile-closed .main-nav__list {
       display: none;
     }
+
+    .main-nav--mobile-nojs .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav--mobile-nojs .main-nav__list {
+      display: block;
+    }
   }
+
   // СТИЛИЗАЦИЯ ИКОНОК
 
   .main-nav__link--svg {
     position: absolute;
     opacity: 0.2;
     left: -44px;
-    top: 2px;
+    top: 4px;
   }
 
-  .main-nav__link:hover .main-nav__link--svg {
+  .main-nav__link:hover .main-nav__link--svg path {
     opacity: 1;
     fill: #63d1bb;
   }
@@ -216,7 +229,7 @@
     }
 
     .main-nav__link--basket svg {
-      left: -51px;
+      left: -49px;
     }
 
     .main-nav__link--search svg {

@@ -9,7 +9,7 @@
   &--index {
     min-height: 282px;
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
-    padding-top: 68px;
+    padding-top: 71px;
     width: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -37,7 +37,7 @@
     &--index {
       background: $bg-top url("../img/hero-tablet@1x.jpg") no-repeat center top;
       margin-top: -79px;
-      padding-top: 155px;
+      padding-top: 153px;
       width: 100%;
       text-align: center;
       position: relative;

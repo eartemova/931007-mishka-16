@@ -41,9 +41,11 @@
     width: 77px;
   }
 
-  .contacts__item--value {
+  .contacts__item--email,
+  .contacts__item--address {
     display: inline-block;
-    width: 155px;
+    width: 180px;
+    padding-right: 30px;
   }
 
   .contacts__map {
@@ -58,7 +60,8 @@
       @include pseudo;
       background-image: url("../img/icon-map-pin.svg");
       top: 144px;
-      left: 139px;
+      left: 50%;
+      transform: translateX(-29%);
       width: 67px;
       height: 100px;
       z-index: 3;
@@ -67,7 +70,7 @@
 
   .contacts__btn {
     font-size: 18px;
-    margin-top: 27px;
+    margin-top: 29px;
     margin-bottom: 39px;
   }
 
@@ -103,19 +106,14 @@
       &:first-child {
         display: block;
       }
-    }
 
-    .contacts__item--value {
-      display: inline-block;
-      width: 230px;
-    }
+      &--address {
+        width: 222px;
+        padding-right: 0;
+      }
 
-    .contacts__map {
-      margin-top: 30px;
-
-      &::before {
-        top: 138px;
-        left: 366px;
+      &--email {
+        width: 200px;
       }
     }
 
@@ -180,7 +178,7 @@
 
       &::before {
         top: 146px;
-        left: 240px;
+        transform: translateX(-36%);
       }
     }
 

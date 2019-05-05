@@ -2,6 +2,18 @@
 
 .reviews {
   padding-top: 24px;
+  position: relative;
+
+  &::after {
+    @include pseudo;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: 50%;
+    bottom: -55px;
+    height: 15px;
+    width: 100%;
+    fill: #f9f9f9;
+    background-size: 320px 20px;
+  }
 
   .reviews__body {
     @include container;
@@ -61,25 +73,22 @@
   /*--------------------------------- ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 67px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     padding-top: 78px;
     background-size: 350px, 475px;
     min-height: 457px;
+    width: 768px;
+    margin: 0 auto;
 
     &::after {
-      @include pseudo;
-      background-image: url("../img/bg-zigzag-line.svg");
       background-position: -15px, 0;
       bottom: -82px;
       height: 15px;
       width: 768px;
-      fill: #f9f9f9;
       background-size: 768px 20px;
     }
 
@@ -151,7 +160,6 @@
       left: 50px;
       height: 30px;
       width: 1050px;
-      fill: #f1f1f1;
       background-size: 1054px 30px;
     }
 

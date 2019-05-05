@@ -2,7 +2,8 @@
 
 .about {
   text-align: left;
-  padding-top: 69px;
+  padding-top: 70px;
+  margin-bottom: 16px;
 
   .about__list {
     list-style: none;
@@ -89,6 +90,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
+    margin-bottom: 67px;
 
     .about__list {
       column-count: 2;
