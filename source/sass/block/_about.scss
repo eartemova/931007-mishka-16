@@ -96,13 +96,14 @@
       column-count: 2;
       margin-top: 0;
       column-gap: 0;
+      margin-left: 2px;
     }
 
     .about__item {
       font-size: 20px;
       line-height: 1.1;
       text-align: left;
-      padding-top: 101px;
+      padding-top: 100px;
       padding-right: 39px;
 
       &--eco::before {

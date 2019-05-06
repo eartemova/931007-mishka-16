@@ -45,12 +45,13 @@
       &::after {
         @include pseudo;
         background-image: url("../img/bg-zigzag-fill.svg");
-        bottom: -22px;
-        left: 0;
-        height: 43px;
         width: 100%;
-        background-size: 768px 43px;
-        background-position: 2px;
+        bottom: -13px;
+        right: 0;
+        height: 33px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        background-size: contain;
       }
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -86,9 +87,9 @@
     &::after {
       bottom: -20px;
       left: 0;
-      height: 37px;
+      height: 34px;
       width: 100%;
-      background-size: 1250px 41px;
+      background-size: 1250px 34px;
       background-position: 50%;
     }
 
