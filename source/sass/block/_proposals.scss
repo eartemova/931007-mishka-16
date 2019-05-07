@@ -59,6 +59,7 @@
     opacity: 0.5;
     right: 25px;
     top: 24px;
+    fill: #149080;
   }
 
   .proposals__link--toys svg {
@@ -66,6 +67,7 @@
     opacity: 0.5;
     right: 26px;
     top: 20px;
+    fill: #149080;
   }
 
   .proposals__link--interior,
@@ -104,11 +106,11 @@
       display: flex;
       min-height: 119px;
       padding-left: 36px;
-      padding-top: 28px;
+      padding-top: 30px;
 
       &--interior svg {
-        right: 35px;
-        top: 30px;
+        right: 25px;
+        top: 33px;
       }
 
       &:hover {
@@ -117,7 +119,7 @@
 
       &--toys svg {
         right: 34px;
-        top: 31px;
+        top: 33px;
       }
     }
   }

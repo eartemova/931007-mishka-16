@@ -27,7 +27,7 @@
     padding: 0;
     text-align: left;
     margin: 0;
-    display: block;  // ПЕРЕКЛЮЧАТЕЛЬ МЕНЮ
+    //display: block;  // ПЕРЕКЛЮЧАТЕЛЬ МЕНЮ
   }
 
   .main-nav__item {
@@ -55,6 +55,11 @@
 
     &:hover {
       color: $color-text-main-hover;
+    }
+
+    &:hover .main-nav__link--svg {
+      fill: #63d1bb;
+      opacity: 1;
     }
 
     &:active {
@@ -129,24 +134,23 @@
     &--mobile-closed .main-nav__list {
       display: none;
     }
+
+    .main-nav--mobile-nojs .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav--mobile-nojs .main-nav__list {
+      display: block;
+    }
   }
+
   // СТИЛИЗАЦИЯ ИКОНОК
 
   .main-nav__link--svg {
     position: absolute;
     opacity: 0.2;
     left: -44px;
-    top: 2px;
-  }
-
-  .main-nav__link:hover .main-nav__link--svg {
-    opacity: 1;
-    fill: #63d1bb;
-  }
-
-  .main-nav__link:active .main-nav__link--svg {
-    opacity: 0.3;
-    fill: #63d1bb;
+    top: 4px;
   }
 
   .main-nav__list--user {
@@ -216,7 +220,7 @@
     }
 
     .main-nav__link--basket svg {
-      left: -51px;
+      left: -49px;
     }
 
     .main-nav__link--search svg {
@@ -239,14 +243,14 @@
 
     .main-nav__item--search {
       width: 86px;
-      padding-top: 37px;
+      padding-top: 54px;
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .main-nav__link--search {
       font-size: 0;
-      color: transparent;
+      display: flex;
     }
 
     .main-nav__toggle {

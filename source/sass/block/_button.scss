@@ -26,6 +26,12 @@
     }
   }
 
+  &--blue {
+    background-color: #63d1bb;
+    color: #ffffff;
+    border: solid 2px #63d1bb;
+  }
+
   @media (min-width: $tablet-width) {
     width: 292px;
   }
