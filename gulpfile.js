@@ -83,9 +83,12 @@ gulp.task("clean", function () {
 });
 
 gulp.task("js", function () {
-  return gulp.src("source/js/**/*.js").
-    pipe(uglify()).
-    pipe(gulp.dest("build/js"));
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(rename("script_min.js"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 gulp.task("build", gulp.series(

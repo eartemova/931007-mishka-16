@@ -100,7 +100,7 @@
               </picture>
             </div>
             <span class="favorites__price">Цена: 990 руб.</span>
-            <a href="favorites-modal.html" class="btn btn--white favorites__btn">Заказать</a>
+            <a href="favorites-modal.html" class="btn btn--white favorites__btn modal-btn">Заказать</a>
           </section>
           <section class="about">
             <h2 class="heading heading--secondary">Коротко о нас:</h2>
@@ -170,21 +170,21 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--instagram" href="#"><span class="visually-hidden">Мишка в Инстаграме</span>
-              <svg width="21.769" height="21.334">
+              <svg width="23.494" height="20.168">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"/>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="#"><span class="visually-hidden">Мишка в Фейсбуке</span>
-              <svg width="21.769" height="21.334">
+              <svg width="14.962" height="27.718">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"/>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#"><span class="visually-hidden">Мишка в Твиттере</span>
-              <svg width="21.769" height="21.334">
+              <svg width="23.494" height="20.168">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"/>
               </svg>
             </a>
@@ -199,28 +199,31 @@
       </div>
     </footer>
     <section class="modal">
-      <h2 class="heading heading--secondary">Добавить в корзину</h2>
+      <h2 class="heading heading--secondary modal__heading">Добавить в корзину</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="modal-form__fieldset modal-form__fieldset--radio">
-          <legend class="modal-form__legend modal-form__legend--radio">Выберите размер:</legend>
+        <div class="modal-form__fieldset">
+          <span class="modal-form__legend">Выберите размер:</span>
           <ul class="modal-form__list">
             <li class="modal-form__item">
-              <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-s" value="small" checked>
-              <label class="modal-form__label modal-form__label--radio" for="size-s">Small</label>
+              <input class="visually-hidden modal-form__control " type="radio" name="size" id="size-s" value="small" checked>
+              <label class="modal-form__label " for="size-s">S</label>
             </li>
             <li class="modal-form__item">
-              <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-m" value="medium">
-              <label class="modal-form__label modal-form__label--radio" for="size-m">Medium</label>
+              <input class="visually-hidden modal-form__control" type="radio" name="size" id="size-m" value="medium">
+              <label class="modal-form__label " for="size-m">M</label>
             </li>
             <li class="modal-form__item">
-              <input class="visually-hidden modal-form__control modal-form__control--radio" type="radio" name="size" id="size-l" value="large">
-              <label class="modal-form__label modal-form__label--radio" for="size-l">Large</label>
+              <input class="visually-hidden modal-form__control" type="radio" name="size" id="size-l" value="large">
+              <label class="modal-form__label " for="size-l">L</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <button class="btn btn--blue modal-form__btn" type="submit">Добавить</button>
       </form>
     </section>
-    <script src="js/script.js"></script>
+    <div class="overlay"><div>
+    <script src="js/script_min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbw-qZjTa5GnNd7evi9RmFp9smFRrnMss&callback=initMap"
+    async defer></script>
   </body>
 </html>

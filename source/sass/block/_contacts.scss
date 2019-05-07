@@ -53,7 +53,7 @@
     width: 100%;
     min-height: 457px;
     margin-bottom: 7px;
-    margin-top: 33px;
+    margin-top: 38px;
     text-align: center;
 
     &::before {
@@ -70,7 +70,7 @@
 
   .contacts__btn {
     font-size: 18px;
-    margin-top: 29px;
+    margin-top: 31px;
     margin-bottom: 39px;
   }
 
@@ -84,7 +84,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 146px;
     position: relative;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 
     .contacts__heading {
       font-size: 43px;
@@ -94,7 +94,7 @@
     .contacts__list {
       display: flex;
       flex-direction: row;
-      margin-top: 50px;
+      margin-top: 52px;
     }
 
     .contacts__item {
@@ -122,7 +122,7 @@
     }
 
     .contacts__btn {
-      margin-top: 43px;
+      margin-top: 45px;
       width: 230px;
       font-size: 17px;
     }
@@ -137,6 +137,10 @@
         right: 51px;
       }
     }
+
+    .contacts__map {
+      margin-top: 29px;
+    }
   }
 
   /*---------------------------------   КОНТАКТЫ - ДЕСКТОП ---------------------------------------*/
@@ -145,7 +149,7 @@
     position: relative;
     margin-top: 230px;
     width: 100%;
-    padding-bottom: 68px;
+    margin-bottom: 65px;
 
     .container {
       position: relative;

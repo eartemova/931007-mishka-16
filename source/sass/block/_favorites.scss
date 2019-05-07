@@ -9,13 +9,15 @@
   &::after {
     @include pseudo;
     background-image: url("../img/bg-zigzag-line.svg");
-    bottom: -42px;
+    bottom: -43px;
     left: 0;
     height: 6px;
     width: 100%;
     fill: #f1f1f1;
     background-size: 320px 100%;
     background-repeat: repeat-x;
+    background-position: center bottom;
+    transform: rotate(180deg);
   }
 }
 
@@ -89,13 +91,13 @@
     &::after {
       @include pseudo;
       background-image: url("../img/bg-zigzag-line.svg");
-      background-position: -54px, 0;
+      background-position: 50%;
       bottom: -68px;
       left: -50px;
       height: 15px;
       width: 768px;
       fill: #f1f1f1;
-      background-size: 768px 20px;
+      background-size: 768px 15px;
     }
   }
 
@@ -162,13 +164,13 @@
     margin-top: 78px;
 
     &::after {
-      background-position: -82px, 0;
-      bottom: -100px;
+      bottom: -96px;
       left: 0;
-      height: 30px;
+      height: 24px;
       width: 1050px;
       fill: #f1f1f1;
-      background-size: 1054px 30px;
+      background-size: 1054px 24px;
+      transform: rotate(180deg);
     }
   }
 
@@ -217,6 +219,6 @@
 
   .favorites__btn {
     margin-left: 175px;
-    margin-top: 34px;
+    margin-top: 37px;
   }
 }

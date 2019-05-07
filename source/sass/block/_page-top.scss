@@ -73,12 +73,13 @@
       &::after {
         @include pseudo;
         background-image: url("../img/bg-zigzag-fill.svg");
-        left: 0;
-        bottom: -10px;
-        height: 43px;
         width: 100%;
-        background-size: 768px 43px;
-        background-position: 2px;
+        bottom: 0;
+        left: 0;
+        height: 33px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        background-size: contain;
       }
     }
   }
@@ -89,7 +90,7 @@
       left: 0;
       height: 34px;
       width: 100%;
-      background-size: 1250px 34px;
+      background-size: 1150px 34px;
       background-position: 50%;
     }
 

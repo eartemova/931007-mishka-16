@@ -59,6 +59,7 @@
 
     &:hover .main-nav__link--svg {
       fill: #63d1bb;
+      opacity: 1;
     }
 
     &:active {
@@ -152,16 +153,6 @@
     top: 4px;
   }
 
-  .main-nav__link:hover .main-nav__link--svg path {
-    opacity: 1;
-    fill: #63d1bb;
-  }
-
-  .main-nav__link:active .main-nav__link--svg {
-    opacity: 0.3;
-    fill: #63d1bb;
-  }
-
   .main-nav__list--user {
     margin-top: 0;
   }
@@ -252,14 +243,14 @@
 
     .main-nav__item--search {
       width: 86px;
-      padding-top: 37px;
+      padding-top: 54px;
       border-left: 1px solid rgba(0, 0, 0, 0.1);
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     .main-nav__link--search {
       font-size: 0;
-      color: transparent;
+      display: flex;
     }
 
     .main-nav__toggle {

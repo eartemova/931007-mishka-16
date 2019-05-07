@@ -7,12 +7,14 @@
   &::after {
     @include pseudo;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-position: 50%;
-    bottom: -55px;
-    height: 15px;
+    bottom: -56px;
+    height: 7px;
     width: 100%;
     fill: #f9f9f9;
-    background-size: 320px 20px;
+    background-size: 320px 7px;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    transform: rotate(180deg);
   }
 }
 
@@ -72,7 +74,7 @@
 }
 
 
-  /*--------------------------------- ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
+/*--------------------------------- ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
 
 @media (min-width: $tablet-width) {
   .reviews {
@@ -81,18 +83,18 @@
     flex-wrap: wrap;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    padding-top: 78px;
+    padding-top: 80px;
     background-size: 350px, 475px;
     min-height: 457px;
     width: 768px;
     margin: 0 auto;
 
     &::after {
-      background-position: -15px, 0;
       bottom: -82px;
-      height: 15px;
+      height: 20px;
       width: 768px;
       background-size: 768px 20px;
+      transform: rotate(180deg);
     }
   }
 
@@ -100,12 +102,15 @@
     font-size: 17px;
     line-height: 1.76;
     font-weight: 400;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 0;
   }
-}
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .reviews {
-    background-image: url("../img/review@2x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .reviews {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__body {
@@ -128,12 +133,6 @@
   .reviews__heading {
     order: -2;
     margin-left: -4px;
-  }
-
-  .reviews__item {
-    display: inline-flex;
-    flex-direction: column;
-    padding-top: 0;
   }
 
   .reviews__comment {
@@ -162,7 +161,7 @@
   }
 }
 
-  /*--------------------------------- ОТЗЫВЫ - ДЕСКТОП ---------------------------------------*/
+/*--------------------------------- ОТЗЫВЫ - ДЕСКТОП ---------------------------------------*/
 
 @media (min-width: $desktop-width) {
   .reviews {
@@ -172,12 +171,11 @@
     margin-top: 78px;
 
     &::after {
-      background-position: -82px, 0;
-      bottom: -94px;
-      left: 50px;
-      height: 30px;
+      bottom: -93px;
+      height: 24px;
       width: 1050px;
-      background-size: 1054px 30px;
+      background-size: 1054px 24px;
+      transform: rotate(180deg);
     }
   }
 

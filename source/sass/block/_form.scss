@@ -281,6 +281,18 @@
       padding-top: 6px;
       padding-bottom: 16px;
     }
+
+    &--text:focus,
+    &--tel:focus,
+    &--email:focus,
+    &--textarea:focus {
+      outline: none;
+    }
+
+    &--radio:focus + label::before,
+    &--checkbox:focus + label::before {
+      border-color: #62d1ba;
+    }
   }
 
   .form__control--radio:checked + .form__label--radio::after,
@@ -291,7 +303,6 @@
   .form__control:hover,
   .form__control:focus {
     border-bottom: 2px solid #62d1ba;
-    outline: none;
   }
 
   .form__control:hover + .form__control--phone-svg,
@@ -544,7 +555,7 @@
         font-size: 19px;
         line-height: 0.95;
         padding-top: 13px;
-        padding-left: 16px;
+        padding-left: 15px;
       }
     }
 
@@ -574,7 +585,7 @@
     .form__notes {
       font-size: 17px;
       line-height: 1.76;
-      padding-top: 30px;
+      padding-top: 33px;
     }
 
     .form__btn {
@@ -666,7 +677,7 @@
     .form__control {
       &--tel,
       &--email {
-        padding-left: 17px;
+        padding-left: 12px;
         margin-left: 33px;
         width: 700px;
       }
