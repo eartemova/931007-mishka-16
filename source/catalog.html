@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--mobile-closed main-nav--mobile-nojs">
         <a href="index.html" class="main-nav__logo">
-          <picture class="logo__image">
+          <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" alt="Логотип Мишка">
@@ -32,10 +32,10 @@
         </ul>
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item main-nav__item--search"><a href="#" class="main-nav__link main-nav__link--search">
-            <svg class="main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"/></svg>Поиск по сайту</a>
+            <svg class="main-nav main-nav__link main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"/></svg>Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--basket"><a href="#" class="main-nav__link main-nav__link--basket">
-            <svg class="main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"/></svg>Корзина: пока пуста</a>
+            <svg class="main-nav main-nav__link main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"/></svg>Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list--promo">
@@ -139,14 +139,14 @@
         <section class="production">
           <h2 class="heading heading--secondary production__heading">Процесс производства</h2>
           <div class="production__video">
-            <a href="#" class="production__video--play"><span class="visually-hidden">Проиграть видео</span></a>
+            <a href="#" class="production production__video production__video--play"><span class="visually-hidden">Проиграть видео</span></a>
             <picture>
                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x,img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео - производство" class="production__video--img">
+                <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео - производство" class="production production__video production__video--img">
             </picture>
           </div>
           <div class="production__text">

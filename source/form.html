@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--mobile-closed main-nav--mobile-nojs">
         <a href="index.html" class="main-nav__logo">
-          <picture class="logo__image">
+          <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" alt="Логотип Мишка">
@@ -32,10 +32,10 @@
         </ul>
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__item main-nav__item--search"><a href="#" class="main-nav__link main-nav__link--search">
-            <svg class="main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"/></svg>Поиск по сайту</a>
+            <svg class="main-nav main-nav__link main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"/></svg>Поиск по сайту</a>
           </li>
           <li class="main-nav__item main-nav__item--basket"><a href="#" class="main-nav__link main-nav__link--basket">
-            <svg class="main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"/></svg>Корзина: пока пуста</a>
+            <svg class="main-nav main-nav__link main-nav__link--svg" width="17.6" height="17.6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"/></svg>Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list main-nav__list--promo">
@@ -59,7 +59,7 @@
           <span class="visually-hidden">Форма заказа</span>
           <div class="form__fieldset form__fieldset--radio">
             <h2 class="form__legend form__legend--radio">Тип</h2>
-            <ul class="form__radio--list">
+            <ul class="form form__radio form__radio--list">
               <li >
                 <input class="visually-hidden form__control form__control--radio" type="radio" name="type" value="interior" id="interior" checked/>
                 <label class="form__label form__label--radio" for="interior">Аксессуар для интерьера</label>
@@ -73,7 +73,7 @@
           <div class="form__fieldset form__fieldset--checkbox">
             <div class="form__wrapper">
               <h2 class="form__legend form__legend--checkbox">Цвет</h2>
-              <ul class="form__checkbox--list">
+              <ul class="form form__checkbox form__checkbox--list">
                 <li>
                   <input class="visually-hidden form__control form__control--checkbox" type="checkbox" name="color" id="white" checked/>
                   <label for="white" class="form__label form__label--checkbox">Белый</label>
@@ -83,36 +83,36 @@
                   <label for="gray" class="form__label form__label--checkbox">Серый</label>
                 </li>
                 <li>
-                  <input class="visually-hidden form__control form__control--checkbox" type="checkbox" name="color" id="tiffani"/>
-                  <label for="tiffani" class="form__label form__label--checkbox">&#171;Тиффани&#187;</label>
+                  <input class="visually-hidden form form__control form__control--checkbox" type="checkbox" name="color" id="tiffani"/>
+                  <label for="tiffani" class="form form__label form__label--checkbox">&#171;Тиффани&#187;</label>
                 </li>
                 <li>
-                  <input class="visually-hidden form__control form__control--checkbox" type="checkbox" name="color" id="black"/>
-                  <label for="black" class="form__label form__label--checkbox">Черный</label>
+                  <input class="visually-hidden form form__control form__control--checkbox" type="checkbox" name="color" id="black"/>
+                  <label for="black" class="form form__label form__label--checkbox">Черный</label>
                 </li>
                 <li>
                   <input class="visually-hidden form__control form__control--checkbox" type="checkbox" name="color" id="pink"/>
-                  <label for="pink" class="form__label form__label--checkbox">Розовый</label>
+                  <label for="pink" class="form form__label form__label--checkbox">Розовый</label>
                 </li>
                 <li>
                   <input class="visually-hidden form__control form__control--checkbox" type="checkbox" name="color" id="orange"/>
-                  <label for="orange" class="form__label form__label--checkbox">Оранжевый</label>
+                  <label for="orange" class="form form__label form__label--checkbox">Оранжевый</label>
                 </li>
               </ul>
             </div>
           </div>
           <div class="form__fieldset form__fieldset--text">
             <h2 class="form__legend form__legend--text">ФИО</h2>
-            <ul class="form__text--list">
-              <li class="form__contacts--item">
+            <ul class="form form__text form__text--list">
+              <li class="form form__contacts form__contacts--item">
                 <label class="form__label form__label--text" for="fname">Имя:</label>
                 <input class="form__control form__control--text" id="fname" type="text" name="fname" placeholder="Введите ваше имя*" required/>
               </li>
-              <li class="form__contacts--item">
+              <li class="form form__contacts form__contacts--item">
                 <label class="form__label form__label--text" for="lname">Фамилия:</label>
                 <input class="form__control form__control--text" id="lname" type="text" name="lname" placeholder="Укажите фамилию*" required/>
               </li>
-              <li class="form__contacts--item">
+              <li class="form form__contacts form__contacts--item">
                 <label class="form__label form__label--text" for="mname">Отчество:</label>
                 <input class="form__control form__control--text" id="mname" type="text" name="mname" placeholder="Отчество, если желаете"/>
               </li>
@@ -123,7 +123,7 @@
               <h2 class="form__field form__field--tel">Тел</h2>
               <label class="form__label form__label--tel" for="tel"></label>
               <input class="form__control form__control--tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required/>
-              <svg class="form__control--phone-svg" width="24.829" height="24.333">
+              <svg class="form form__control form__control--phone-svg" width="24.829" height="24.333">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"/>
               </svg>
             </div>
@@ -133,7 +133,7 @@
               <h2 class="form__field form__field--email">E-mail</h2>
               <label class="form__label form__label--email" for="email"></label>
               <input class="form__control form__control--email" id="email" type="email" name="email" placeholder="Ваш Email*" required/>
-              <svg class="form__control--mail-svg" width="32" height="32">
+              <svg class="form form__control form__control--mail-svg" width="32" height="32">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"/>
               </svg>
             </div>
@@ -142,7 +142,7 @@
             <div class="form__textarea">
               <h2 class="form__field form__field--textarea">Доп</h2>
               <label class="form__label form__label--textarea" for="add"></label>
-              <textarea class="form__textarea--text" id="add" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="form form__textarea form__textarea--text" id="add" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </div>
           <div class="form__filling">
