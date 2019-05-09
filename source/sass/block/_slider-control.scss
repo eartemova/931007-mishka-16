@@ -1,0 +1,25 @@
+.slider-control {
+  display: flex;
+  flex-direction: row;
+  margin-top: 31px;
+  margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-control {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    border: none;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-control {
+    margin: 0;
+    padding: 0;
+    bottom: 10px;
+    right: -100px;
+  }
+}

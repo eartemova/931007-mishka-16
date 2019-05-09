@@ -1,4 +1,4 @@
-
+@import "_font-face";
 @import "normalize";
 @import "_variables";
 @import "_base";
@@ -10,11 +10,10 @@
 @import "block/_container";
 @import "block/_copyright";
 @import "block/_favorites";
-@import "block/_font-face";
 @import "block/_form";
 @import "block/_heading";
 @import "block/_main-nav";
-@import "block/_modal";
+@import "block/_modal-form";
 @import "block/_overlay";
 @import "block/_page-top";
 @import "block/_proposals";
@@ -24,4 +23,5 @@
 @import "block/_page-footer";
 @import "block/_reviews";
 @import "block/_social-list";
+@import "block/_slider-control";
 @import "block/_visually-hidden";

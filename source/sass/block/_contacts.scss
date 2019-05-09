@@ -1,208 +1,213 @@
 .contacts {
   margin-top: 90px;
+}
 
-  .contacts__list {
-    margin-top: 29px;
+.contacts__list {
+  margin-top: 29px;
+}
+
+.contacts__item a {
+  color: $color-text-paragraph;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+  font-style: normal;
+  color: $color-text-paragraph;
+  margin-bottom: 29px;
+}
+
+.contacts__email {
+    border-bottom: solid 1px #46c1ae;
+
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:visited {
+      color: $color-text-paragraph;
+    }
   }
 
-  .contacts__item a {
-    color: $color-text-paragraph;
+.contacts__title {
+  display: inline-block;
+  width: 77px;
+}
+
+.contacts__email,
+.contacts__address {
+  display: inline-block;
+  width: 180px;
+  padding-right: 30px;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  min-height: 457px;
+  margin-bottom: 7px;
+  margin-top: 38px;
+  text-align: center;
+
+  &::before {
+    @include pseudo;
+    background-image: url("../img/icon-map-pin.svg");
+    top: 144px;
+    left: 50%;
+    transform: translateX(-29%);
+    width: 67px;
+    height: 100px;
+    z-index: 3;
+  }
+}
+
+.contacts__btn {
+  font-size: 18px;
+  margin-top: 31px;
+  margin-bottom: 39px;
+}
+
+.contacts__container {
+  @include container;
+  text-align: center;
+}
+
+/*---------------------------------   КОНТАКТЫ - ПЛАНШЕТ ---------------------------------------*/
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 145px;
+    position: relative;
+    margin-bottom: 18px;
+  }
+
+  .contacts__heading {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 52px;
   }
 
   .contacts__item {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    line-height: 2;
-    text-align: left;
-    font-style: normal;
-    color: $color-text-paragraph;
-    margin-bottom: 29px;
+    font-size: 17px;
+    line-height: 1.76;
+    display: inline-flex;
 
-    &--e-mail {
-      border-bottom: solid 1px #46c1ae;
-
-      &:hover {
-        color: #46c1ae;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
-
-      &:visited {
-        color: $color-text-paragraph;
-      }
+    &:first-child {
+      display: block;
+      padding-right: 59px;
     }
   }
 
-  .contacts__item--title {
-    display: inline-block;
-    width: 77px;
+  .contacts__address {
+    width: 222px;
+    padding-right: 0;
   }
 
-  .contacts__item--email,
-  .contacts__item--address {
-    display: inline-block;
-    width: 180px;
-    padding-right: 30px;
+  .contacts__email {
+    width: 200px;
+    padding-right: 0;
   }
 
-  .contacts__map {
-    position: relative;
-    width: 100%;
-    min-height: 457px;
-    margin-bottom: 7px;
-    margin-top: 38px;
-    text-align: center;
-
-    &::before {
-      @include pseudo;
-      background-image: url("../img/icon-map-pin.svg");
-      top: 144px;
-      left: 50%;
-      transform: translateX(-29%);
-      width: 67px;
-      height: 100px;
-      z-index: 3;
-    }
+  .contacts__title {
+    width: 74px;
   }
 
   .contacts__btn {
-    font-size: 18px;
-    margin-top: 31px;
-    margin-bottom: 39px;
+    margin-top: 49px;
+    width: 230px;
+    font-size: 17px;
   }
 
-  .contacts__container {
-    @include container;
-    text-align: center;
+  .contacts__map {
+    margin-top: 29px;
   }
 
-  /*---------------------------------   КОНТАКТЫ - ПЛАНШЕТ ---------------------------------------*/
-
-  @media (min-width: $tablet-width) {
-    margin-top: 146px;
+  .contacts__flag {
     position: relative;
-    margin-bottom: 18px;
 
-    .contacts__heading {
-      font-size: 43px;
-      line-height: 1.16;
-    }
-
-    .contacts__list {
-      display: flex;
-      flex-direction: row;
-      margin-top: 52px;
-    }
-
-    .contacts__item {
-      font-size: 17px;
-      line-height: 1.76;
-      display: inline-flex;
-
-      &:first-child {
-        display: block;
-        padding-right: 54px;
-      }
-
-      &--address {
-        width: 222px;
-        padding-right: 0;
-      }
-
-      &--email {
-        width: 200px;
-      }
-
-      &--title {
-        width: 74px;
-      }
-    }
-
-    .contacts__btn {
-      margin-top: 45px;
-      width: 230px;
-      font-size: 17px;
-    }
-
-    .container {
-      &::before {
-        @include pseudo;
-        background-image: url("../img/icon-flag.svg");
-        width: 47px;
-        height: 81px;
-        top: -15px;
-        right: 51px;
-      }
-    }
-
-    .contacts__map {
-      margin-top: 29px;
+    &::before {
+      @include pseudo;
+      background-image: url("../img/icon-flag.svg");
+      width: 47px;
+      height: 81px;
+      top: -15px;
+      right: 51px;
     }
   }
+}
 
-  /*---------------------------------   КОНТАКТЫ - ДЕСКТОП ---------------------------------------*/
+/*---------------------------------   КОНТАКТЫ - ДЕСКТОП ---------------------------------------*/
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .contacts {
     position: relative;
     margin-top: 230px;
     width: 100%;
     margin-bottom: 65px;
+  }
 
-    .container {
-      position: relative;
+  .contacts__heading {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-left: 168px;
+    width: 500px;
+  }
 
-      &::before {
-        left: 113px;
-        top: -8px;
-      }
+  .contacts__list {
+    flex-direction: column;
+    margin-top: 51px;
+    margin-left: 174px;
+  }
+
+  .contacts__container {
+    text-align: left;
+    width: 1050px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    width: 525px;
+    height: 457px;
+    top: -99px;
+    left: 50%;
+
+    &::before {
+      top: 146px;
+      transform: translateX(-36%);
     }
+  }
 
-    .contacts__heading {
-      font-size: 53px;
-      line-height: 1.08;
-      margin-left: 170px;
-    }
+  .contacts__btn {
+    margin-top: 55px;
+    margin-left: 125px;
+  }
 
-    .contacts__list {
-      flex-direction: column;
-      margin-top: 51px;
-      margin-left: 174px;
-    }
+  .contacts__title {
+    width: 77px;
+  }
 
-    .contacts__container {
-      text-align: left;
-      width: 1050px;
-    }
+  .contacts__email {
+    margin-left: -1px;
+  }
 
-    .contacts__map {
-      position: absolute;
-      width: 525px;
-      height: 457px;
-      top: -99px;
-      left: 50%;
 
-      &::before {
-        top: 146px;
-        transform: translateX(-36%);
-      }
-    }
-
-    .contacts__btn {
-      margin-top: 55px;
-      margin-left: 125px;
-    }
-
-    .contacts__item {
-      &--title {
-        width: 77px;
-      }
-
-      &--e-mail {
-        margin-left: -1px;
-      }
+  .contacts__flag {
+    &::before {
+      top: -7px;
+      left: 113px;
     }
   }
 }

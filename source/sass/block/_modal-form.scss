@@ -1,6 +1,6 @@
 // Модальное окно
 
-.modal {
+.modal-form {
   display: none;
   position: fixed;
   top: 50%;
@@ -14,11 +14,11 @@
   padding: 30px;
 }
 
-.modal--show {
+.modal-form--show {
   display: block;
 }
 
-.modal__heading {
+.modal-form__heading {
   font-size: 25px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -80,13 +80,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .modal {
+  .modal-form {
     width: 566px;
     height: 336px;
-    padding: 28px 105px;
+    padding: 34px 105px;
   }
 
-  .modal__heading {
+  .modal-form__heading {
     font-size: 30px;
     line-height: 1.9;
     margin-bottom: 15px;
@@ -103,8 +103,8 @@
   }
 
   .modal-form__list {
-    margin-top: 32px;
-    margin-bottom: 42px;
+    margin-top: 39px;
+    margin-bottom: 47px;
   }
 
   .modal-form__btn {

@@ -9,5 +9,7 @@
 node_modules/
 build/
 source/sass/temp/
+source/css/*.css
+source/css/*.map
 npm-debug.*
 Thumbs.db

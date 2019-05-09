@@ -15,31 +15,33 @@
   &:active {
     opacity: 0.3;
   }
+}
+.copyright__text {
+  color: $color-text-main;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: normal;
+  text-align: left;
+  padding-right: 29px;
+}
 
-  .copyright__text {
-    color: $color-text-main;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: left;
-    padding-right: 29px;
-  }
+.copyright__logo {
+  margin-top: -5px;
+  fill: #63d1bb;
+}
 
-  .copyright__logo {
-    margin-top: -5px;
-    fill: #63d1bb;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 57px;
+@media (min-width: $tablet-width) {
+  .copyright {
     justify-content: flex-end;
     width: 207px;
     padding-top: 12px;
+    margin: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .copyright {
     padding-top: 12px;
-    margin-left: 249px;
   }
 }

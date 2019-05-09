@@ -1,157 +1,179 @@
 .proposals {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 320px;
   margin-top: 151px;
+}
 
-  .proposals__list {
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: -26px;
-    padding: 0;
-    height: 206px;
+.proposals__list {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: -26px;
+  padding: 0;
+}
+
+.proposals__link {
+  @include container;
+  min-height: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.26;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-top: 26px;
+  text-align: left;
+
+  &--interior {
+    background-color: $color-btn-add1;
   }
 
-  .proposals__link {
-    @include container;
-    min-height: 103px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 1.26;
-    color: #ffffff;
-    text-decoration: none;
-    position: relative;
-    padding-top: 26px;
-    text-align: left;
+  &--toys {
+    background-color: $color-btn-add2;
+  }
+}
 
-    &--interior {
-      background-color: $color-btn-add1;
-    }
+.proposals__text {
+  width: 100px;
+}
 
-    &--toys {
-      background-color: $color-btn-add2;
-    }
 
-    &--text {
-      width: 100px;
-    }
+.proposals__link--interior:hover {
+  transform: translateY(-5px);
+  background-color: $color-btn-add1-hover;
+  min-height: 108px;
+  margin-bottom: -5px;
+}
+
+.proposals__link--toys:hover {
+  transform: translateY(-5px);
+  background-color: $color-btn-add2-hover;
+  height: 108px;
+  margin-bottom: -5px;
+}
+
+.proposals__link--interior svg {
+  position: absolute;
+  opacity: 0.5;
+  right: 25px;
+  top: 24px;
+  fill: #149080;
+}
+
+.proposals__link--toys svg {
+  position: absolute;
+  opacity: 0.5;
+  right: 26px;
+  top: 20px;
+  fill: #149080;
+}
+
+.proposals__link--interior,
+.proposals__link--toys {
+  &:hover svg {
+    opacity: 0.7;
   }
 
-  .proposals__link--interior:hover {
-    transform: translateY(-5px);
-    background-color: $color-btn-add1-hover;
-    height: 108px;
-    margin-bottom: -5px;
+  &:active svg {
+    opacity: 0.3;
   }
 
-  .proposals__link--toys:hover {
-    transform: translateY(-5px);
-    background-color: $color-btn-add2-hover;
-    height: 108px;
-    margin-bottom: -5px;
+  &:active span {
+    opacity: 0.3;
   }
+}
 
-  .proposals__link--interior svg {
-    position: absolute;
-    opacity: 0.5;
-    right: 25px;
-    top: 24px;
-    fill: #149080;
-  }
-
-  .proposals__link--toys svg {
-    position: absolute;
-    opacity: 0.5;
-    right: 26px;
-    top: 20px;
-    fill: #149080;
-  }
-
-  .proposals__link--interior,
-  .proposals__link--toys {
-    &:hover svg {
-      opacity: 0.7;
-    }
-
-    &:active svg {
-      opacity: 0.3;
-    }
-
-    &:active span {
-      opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .proposals {
     width: 668px;
     margin: 0 auto;
     margin-top: 373px;
 
-    .proposals__list {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      height: 119px;
-      position: relative;
-    }
-
-    .proposals__link {
-      font-size: 20px;
-      line-height: 1.5;
-      text-align: left;
-      width: 335px;
-      display: flex;
-      min-height: 119px;
-      padding-left: 36px;
-      padding-top: 30px;
-
-      &--interior svg {
-        right: 25px;
-        top: 33px;
-      }
-
-      &:hover {
-        min-height: 124px;
-      }
-
-      &--toys svg {
-        right: 34px;
-        top: 33px;
-      }
+    &::after {
+      @include pseudo;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      width: 100%;
+      bottom: -14px;
+      right: 0;
+      height: 34px;
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: contain;
     }
   }
 
-  @media (min-width: $desktop-width) {
+  .proposals__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .proposals__link {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    width: 335px;
+    display: flex;
+    min-height: 119px;
+    padding-left: 36px;
+    padding-top: 30px;
+
+    &--interior svg {
+      right: 25px;
+      top: 33px;
+    }
+
+    &:hover {
+      min-height: 124px;
+    }
+
+    &--toys svg {
+      right: 34px;
+      top: 33px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .proposals {
     width: 1050px;
     margin: 0 auto;
     margin-top: 358px;
 
-    .proposals__link {
-      width: 525px;
+    &::after {
+      background-size: 1250px 34px;
+      bottom: -19px;
+    }
+  }
 
-      &--interior svg {
-        left: 439px;
-      }
+  .proposals__link {
+    width: 525px;
 
-      &--toys svg {
-        left: 430px;
-        top: 34px;
-      }
+    &--interior svg {
+      left: 439px;
     }
 
-    .proposals__list {
-      &::after {
-        @include pseudo;
-        top: 100px;
-        left: -50px;
-        height: 41px;
-        width: 1150px;
-        background-size: 1250px 41px;
-        background-position: -51px;
-      }
+    &--toys svg {
+      left: 430px;
+      top: 34px;
+    }
+  }
+
+  .proposals__list {
+    &::after {
+      @include pseudo;
+      top: 100px;
+      left: -50px;
+      height: 41px;
+      width: 1150px;
+      background-size: 1250px 41px;
+      background-position: -51px;
     }
   }
 }
+
