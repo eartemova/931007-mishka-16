@@ -4,55 +4,57 @@
   width: 100%;
   min-height: 160px;
   background-color: $bg-footer;
+}
 
-  .page-footer__logo {
-    display: none;
-  }
+.page-footer__logo {
+  display: none;
+}
 
-  .page-footer__copyright {
-    display: flex;
+.page-footer__copyright {
+  display: flex;
+}
+
+.page-footer__container {
+  @include container;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*--------------------------------- ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 51px;
   }
 
   .page-footer__container {
     @include container;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
-  /*--------------------------------- ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
+  .page-footer__logo {
+    display: block;
+    height: 50px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 51px;
-
-    .page-footer__container {
-      @include container;
+    &:hover {
+      fill: #46c1ae;
     }
 
-    .page-footer__logo {
-      display: block;
-      height: 50px;
-
-      &:hover {
-        fill: #46c1ae;
-      }
-
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
     }
   }
+}
 
-  /*--------------------------------- ФУТЕР - ДЕСКТОП ---------------------------------------*/
+/*--------------------------------- ФУТЕР - ДЕСКТОП ---------------------------------------*/
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .page-footer {
     margin-top: 0;
+  }
 
-    .page-footer__container {
-      @include container;
-    }
+  .page-footer__container {
+    @include container;
   }
 }

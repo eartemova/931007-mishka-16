@@ -28,12 +28,14 @@
   &--catalog {
     padding-top: 70px;
   }
+}
 
-  .page-top__heading {
-    @include container;
-  }
+.page-top__heading {
+  @include container;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .page-top {
     &--index {
       background: $bg-top url("../img/hero-tablet@1x.jpg") no-repeat center top;
       margin-top: -79px;
@@ -42,26 +44,10 @@
       text-align: center;
       position: relative;
 
-      &::after {
-        @include pseudo;
-        background-image: url("../img/bg-zigzag-fill.svg");
-        width: 100%;
-        bottom: -13px;
-        right: 0;
-        height: 33px;
-        background-repeat: repeat-x;
-        background-position: center bottom;
-        background-size: contain;
-      }
-
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: $bg-top url("../img/hero-tablet@2x.jpg") no-repeat center top;
         background-size: 1150px auto;
       }
-    }
-
-    .page-top__heading {
-      @include container;
     }
 
     &--catalog,
@@ -75,7 +61,7 @@
         background-image: url("../img/bg-zigzag-fill.svg");
         width: 100%;
         bottom: 0;
-        left: 0;
+        right: 0;
         height: 33px;
         background-repeat: repeat-x;
         background-position: center bottom;
@@ -84,26 +70,13 @@
     }
   }
 
-  @media (min-width: $desktop-width) {
-    &::after {
-      bottom: -20px;
-      left: 0;
-      height: 34px;
-      width: 100%;
-      background-size: 1150px 34px;
-      background-position: 50%;
-    }
+  .page-top__heading {
+    @include container;
+  }
+}
 
-    &--catalog,
-    &--form {
-      min-height: 255px;
-    }
-
-    .page-top__heading {
-      width: 1050px;
-      margin: 0 auto;
-    }
-
+@media (min-width: $desktop-width) {
+  .page-top {
     &--index {
       background: $bg-top url("../img/hero-desktop@1x.jpg") no-repeat center top;
       width: 100%;
@@ -116,5 +89,24 @@
         background-size: 1150px auto;
       }
     }
+
+    &--catalog,
+    &--form {
+      min-height: 255px;
+
+      &::after {
+        bottom: -19px;
+        left: 0;
+        height: 34px;
+        width: 100%;
+        background-size: 1150px 34px;
+        background-position: 50%;
+      }
+    }
+  }
+
+  .page-top__heading {
+    width: 1050px;
+    margin: 0 auto;
   }
 }

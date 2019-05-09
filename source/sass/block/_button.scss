@@ -31,8 +31,10 @@
     color: #ffffff;
     border: solid 2px #63d1bb;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .btn {
     width: 292px;
   }
 }
@@ -64,8 +66,10 @@
   &:active {
     opacity: 0.3;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .btn__slider {
     width: 86px;
     height: 40px;
     border: none;

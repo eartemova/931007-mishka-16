@@ -5,36 +5,40 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
   padding: 10px 58px 23px;
+}
 
-  .social-list__item:not(:last-child) {
-    margin-right: 40px;
-    display: inline-block;
+.social-list__item:not(:last-child) {
+  margin-right: 40px;
+  display: inline-block;
+}
+
+.social-list__item svg {
+  &:hover {
+    fill: #46c1ae;
   }
 
-  .social-list__item svg {
-    &:hover {
-      fill: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  .social-list__link {
-    display: block;
-  }
+.social-list__link {
+  display: block;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .social-list {
     margin-top: 0;
-    margin-left: 160px;
     border-bottom: none;
-    padding: 0;
+    width: 38px;
+    padding: 7px 0 0 0;
     margin-bottom: 62px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-left: 350px;
-    padding-top: 0;
+@media (min-width: $desktop-width) {
+  .social-list {
+    padding-top: 7px;
+    width: 41px;
   }
 }
