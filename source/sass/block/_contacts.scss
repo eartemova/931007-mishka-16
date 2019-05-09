@@ -22,20 +22,20 @@
 }
 
 .contacts__email {
-    border-bottom: solid 1px #46c1ae;
+  border-bottom: solid 1px #46c1ae;
 
-    &:hover {
-      color: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    &:visited {
-      color: $color-text-paragraph;
-    }
+  &:hover {
+    color: #46c1ae;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:visited {
+    color: $color-text-paragraph;
+  }
+}
 
 .contacts__title {
   display: inline-block;

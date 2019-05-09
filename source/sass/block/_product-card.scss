@@ -75,8 +75,8 @@
 @media (min-width: $tablet-width) {
   .product-card {
     display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .product-card__link {
@@ -152,4 +152,3 @@
     padding-left: 0;
   }
 }
-
