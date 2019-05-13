@@ -58,4 +58,8 @@
   .page-footer__container {
     @include container;
   }
+
+  .page-footer__logo {
+    margin-right: 100px;
+  }
 }

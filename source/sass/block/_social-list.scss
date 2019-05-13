@@ -4,16 +4,17 @@
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
-  padding: 27px 59px 23px;
-  width: 260px;
+  padding: 27px 38px 23px;
+  max-width: 260px;
   min-height: 30px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
-.social-list__item:nth-child(3n+2) {
-  margin: 0 40px;
-  display: inline-block;
+.social-list__item {
+  width: 30px;
+  text-align: center;
+  margin: 0 15px;
 }
 
 .social-list__item svg {
@@ -35,6 +36,6 @@
     margin: 0;
     border-bottom: none;
     padding: 0;
-    max-width: 145px;
+    max-width: 185px;
   }
 }

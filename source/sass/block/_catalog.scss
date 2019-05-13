@@ -46,13 +46,14 @@
 
   .catalog__list {
     display: flex;
-    justify-content: space-between;
     margin-top: 129px;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .catalog__item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    align-self: flex-start;
 
     &:not(:first-of-type) {
       margin-top: 0;
