@@ -4,11 +4,15 @@
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   align-items: center;
-  padding: 10px 58px 23px;
+  padding: 27px 59px 23px;
+  width: 260px;
+  min-height: 30px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: 40px;
+.social-list__item:nth-child(3n+2) {
+  margin: 0 40px;
   display: inline-block;
 }
 
@@ -28,17 +32,9 @@
 
 @media (min-width: $tablet-width) {
   .social-list {
-    margin-top: 0;
+    margin: 0;
     border-bottom: none;
-    width: 38px;
-    padding: 7px 0 0 0;
-    margin-bottom: 62px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .social-list {
-    padding-top: 7px;
-    width: 41px;
+    padding: 0;
+    max-width: 145px;
   }
 }
