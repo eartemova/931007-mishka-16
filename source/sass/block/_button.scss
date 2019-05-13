@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   width: 260px;
-  height: 52px;
+  min-height: 52px;
   border: solid 2px $color-btn-border;
   text-transform: uppercase;
   font-size: 17px;
