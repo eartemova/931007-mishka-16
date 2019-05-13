@@ -134,8 +134,10 @@
   .production__order {
     width: 100%;
     margin-left: 2px;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 46px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -143,7 +145,7 @@
   .production {
     margin-right: 0;
     align-items: flex-end;
-    margin-top: 57px;
+    margin-top: 46px;
     position: relative;
     min-height: 456px;
   }
@@ -182,7 +184,9 @@
   }
 
   .production__order {
-    margin-top: 29px;
+    margin-top: 31px;
     margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
