@@ -1,3 +1,4 @@
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО ---------------------------------------*/
 .production {
   margin-top: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -85,6 +86,8 @@
   vertical-align: bottom;
 }
 
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО - ПЛАНШЕТ ---------------------------------------*/
+
 @media (min-width: $tablet-width) {
   .production {
     flex-wrap: wrap;
@@ -140,6 +143,8 @@
     padding-right: 100px;
   }
 }
+
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО - ДЕСКТОП ---------------------------------------*/
 
 @media (min-width: $desktop-width) {
   .production {

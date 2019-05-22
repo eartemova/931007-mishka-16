@@ -1,22 +1,25 @@
 "use strict";
 
-var gulp = require("gulp");
-var del = require("del");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-rename");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var imagemin = require("gulp-imagemin");
-var mozjpeg = require("imagemin-mozjpeg");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var uglify = require("gulp-uglify");
-var server = require("browser-sync").create();
+let gulp = require("gulp");
+let del = require("del");
+let plumber = require("gulp-plumber");
+let sourcemap = require("gulp-sourcemaps");
+let rename = require("gulp-rename");
+let sass = require("gulp-sass");
+let postcss = require("gulp-postcss");
+let autoprefixer = require("autoprefixer");
+let sorting = require('postcss-sorting');
+let sortingOptions = require("./.postcss-sorting.json");
+let csso = require("gulp-csso");
+let imagemin = require("gulp-imagemin");
+let mozjpeg = require("imagemin-mozjpeg");
+let webp = require("gulp-webp");
+let svgstore = require("gulp-svgstore");
+let posthtml = require("gulp-posthtml");
+let htmlmin = require('gulp-htmlmin');
+let include = require("posthtml-include");
+let uglify = require("gulp-uglify");
+let server = require("browser-sync").create();
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -26,11 +29,12 @@ gulp.task("css", function () {
       includePaths: require("node-normalize-scss").includePaths
     }))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      sorting(sortingOptions)
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
-    .pipe(rename("style_min.css"))
+    .pipe(rename("style_mini.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -54,7 +58,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/sprite/*.svg")
+  return gulp.src("build/img/sprite/*.svg")
     .pipe(svgstore({inlineSvg: true}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/sprite"));
@@ -65,6 +69,9 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(gulp.dest("build"))
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(rename({ suffix: '.mini' }))
   .pipe(gulp.dest("build"));
 });
 
@@ -73,6 +80,7 @@ gulp.task("copy", function () {
   "source/fonts/**/*.{woff,woff2}",
   "sourse/img/**",
   "source/js/**",
+  "source/*.ico"
   ], {
   base: "source"
   })
@@ -86,7 +94,7 @@ gulp.task("clean", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js")
     .pipe(uglify())
-    .pipe(rename("script_min.js"))
+    .pipe(rename("script_mini.js"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());

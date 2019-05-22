@@ -1,10 +1,11 @@
-
-.catalog {
-  margin-bottom: 55px;
-}
+/*--------------------------------- CATALOG/КАТАЛОГ ---------------------------------------*/
+//.catalog {
+//  margin-bottom: 55px;
+//}
 
 .catalog__container {
   @include container;
+  margin-bottom: 55px;
 }
 
 .catalog__list {
@@ -22,8 +23,10 @@
   }
 }
 
+/*--------------------------------- CATALOG/КАТАЛОГ - ПЛАНШЕТ ---------------------------------------*/
+
 @media (min-width: $tablet-width) {
-  .catalog {
+  .catalog__container {
     margin-bottom: 63px;
   }
 
@@ -39,8 +42,10 @@
   }
 }
 
+/*--------------------------------- CATALOG/КАТАЛОГ - ДЕСКТОП ---------------------------------------*/
+
 @media (min-width: $desktop-width) {
-  .catalog {
+  .catalog__container {
     margin-bottom: 105px;
   }
 

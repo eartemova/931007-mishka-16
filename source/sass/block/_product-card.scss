@@ -1,3 +1,4 @@
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА ---------------------------------------*/
 .product-card {
   text-align: left;
 
@@ -15,8 +16,9 @@
 
 .product-card__basket {
   display: inline-block;
-  padding-top: 22px;
+  padding-top: 24px;
   opacity: 0.2;
+  overflow: hidden;
 
   &:hover {
     opacity: 1;
@@ -72,6 +74,8 @@
   justify-content: space-between;
 }
 
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА - ПЛАНШЕТ ---------------------------------------*/
+
 @media (min-width: $tablet-width) {
   .product-card {
     display: flex;
@@ -112,14 +116,16 @@
   }
 
   .product-card__basket {
-    margin-left: 131px;
-    right: -10px;
+    padding-top: 24px;
+    padding-right: 4px;
   }
 
   .product-card__buy {
     margin-top: 34px;
   }
 }
+
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА - ДЕСКТОП ---------------------------------------*/
 
 @media (min-width: $desktop-width) {
   .product-card {
