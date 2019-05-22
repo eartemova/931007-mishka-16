@@ -16,7 +16,7 @@
 
 .product-card__basket {
   display: inline-block;
-  padding-top: 22px;
+  padding-top: 24px;
   opacity: 0.2;
   overflow: hidden;
 
@@ -116,8 +116,8 @@
   }
 
   .product-card__basket {
-    margin-left: 131px;
-    right: -10px;
+    padding-top: 24px;
+    padding-right: 4px;
   }
 
   .product-card__buy {

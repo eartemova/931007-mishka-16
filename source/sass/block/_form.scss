@@ -238,6 +238,7 @@
   width: 100%;
   color: #444444;
   font-weight: 200;
+  opacity: 0.3;
 
   &--radio {
     &:hover + .form__label--radio::before {
@@ -327,6 +328,8 @@
   border: 2px solid #444444;
   margin-top: 0;
   min-height: 142px;
+  color: #444444;
+  opacity: 0.3;
 
   &:hover,
   &:focus {
@@ -354,7 +357,8 @@
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder {
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
+  opacity: 0.3;
 }
 
 /*--------------------------------- FORM/ФОРМА - ПЛАНШЕТ ---------------------------------------*/

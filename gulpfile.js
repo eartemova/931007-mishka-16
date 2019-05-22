@@ -80,6 +80,7 @@ gulp.task("copy", function () {
   "source/fonts/**/*.{woff,woff2}",
   "sourse/img/**",
   "source/js/**",
+  "source/*.ico"
   ], {
   base: "source"
   })
@@ -93,7 +94,7 @@ gulp.task("clean", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/**/*.js")
     .pipe(uglify())
-    .pipe(rename("script_min.js"))
+    .pipe(rename("script_mini.js"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
