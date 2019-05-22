@@ -1,3 +1,5 @@
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ ---------------------------------------*/
+
 .proposals {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +64,7 @@
   right: 25px;
   top: 24px;
   fill: #149080;
+  overflow: hidden;
 }
 
 .proposals__link--toys svg {
@@ -70,6 +73,7 @@
   right: 26px;
   top: 20px;
   fill: #149080;
+  overflow: hidden;
 }
 
 .proposals__link--interior,
@@ -86,6 +90,8 @@
     opacity: 0.3;
   }
 }
+
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ - ПЛАНШЕТ ---------------------------------------*/
 
 @media (min-width: $tablet-width) {
   .proposals {
@@ -122,6 +128,7 @@
     min-height: 119px;
     padding-left: 36px;
     padding-top: 30px;
+    padding-bottom: 15px;
 
     &--interior svg {
       right: 25px;
@@ -138,6 +145,8 @@
     }
   }
 }
+
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ - ДЕСКТОП ---------------------------------------*/
 
 @media (min-width: $desktop-width) {
   .proposals {

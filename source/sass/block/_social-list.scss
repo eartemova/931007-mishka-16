@@ -1,3 +1,4 @@
+/*--------------------------------- SOCIAL LIST / СОЦИАЛЬНЫЕ СЕТИ ---------------------------------------*/
 .social-list {
   display: flex;
   flex-direction: row;
@@ -30,6 +31,7 @@
 .social-list__link {
   display: block;
 }
+/*--------------------------------- SOCIAL LIST / СОЦИАЛЬНЫЕ СЕТИ - ПЛАНШЕТ ---------------------------------------*/
 
 @media (min-width: $tablet-width) {
   .social-list {

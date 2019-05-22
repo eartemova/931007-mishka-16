@@ -1,9 +1,12 @@
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР ------------------------------------------*/
 .container {
   width: 320px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
 }
+
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР - ПЛАНШЕТ ------------------------------------------*/
 
 @media (min-width: $tablet-width) {
   .container {
@@ -12,6 +15,8 @@
     padding-right: 50px;
   }
 }
+
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР - ДЕСКТОП ------------------------------------------*/
 
 @media (min-width: $desktop-width) {
   .container {
