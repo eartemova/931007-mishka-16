@@ -316,18 +316,6 @@ template {
 [hidden] {
   display: none; }
 
-/*
-$blue-base: #66ccff;
-$blue-green:#149080;
-$seafoam-blue: #63d1bb;
-$greyish-brown-30:  rgba(68, 68, 68, 0.3);
-$black-60: rgba(0, 0, 0, 0.6);
-$very-dark-brown: #010000;
-$brown: #444444;
-$white: #ececec;
-$greeny-blue: #56c3b2;
-$gray-light: #f1f1f1;
-*/
 *,
 *::after,
 *::before {
@@ -384,6 +372,18 @@ input[type="email"]::placeholder {
   margin-bottom: 16px;
   padding-top: 70px;
   text-align: left; }
+
+.about__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .about__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .about__container {
+      width: 1150px; } }
 
 .about__list {
   margin-top: 18px;
@@ -499,8 +499,9 @@ input[type="email"]::placeholder {
 @media (min-width: 1150px) {
   .about {
     margin-top: 84px;
-    margin-right: 0;
-    padding-left: 170px; }
+    margin-right: 0; }
+  .about__container {
+    padding-left: 220px; }
   .about__list {
     width: 700px;
     margin-top: 4px;
@@ -548,11 +549,6 @@ input[type="email"]::placeholder {
     background-color: #63d1bb;
     border: solid 2px #63d1bb; }
 
-/*--------------------------------- BUTTONS/КНОПКИ - ПЛАНШЕТ ---------------------------------------*/
-@media (min-width: 768px) {
-  .btn {
-    width: 292px; } }
-
 .btn__slider {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -575,6 +571,11 @@ input[type="email"]::placeholder {
   .btn__slider:active {
     opacity: 0.3; }
 
+/*--------------------------------- BUTTONS/КНОПКИ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .btn {
+    width: 292px; } }
+
 /*--------------------------------- BUTTONS/КНОПКИ - ДЕСКТОП ---------------------------------------*/
 @media (min-width: 768px) {
   .btn__slider {
@@ -595,6 +596,16 @@ input[type="email"]::placeholder {
   @media (min-width: 1150px) {
     .catalog__container {
       width: 1150px; } }
+
+.catalog__heading {
+  display: block;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .catalog__heading {
+      padding: 15px; } }
+  @media (min-width: 1150px) {
+    .catalog__heading {
+      padding: 25px; } }
 
 .catalog__list {
   margin-top: 30px;
@@ -642,7 +653,22 @@ input[type="email"]::placeholder {
 
 /*--------------------------------- CONTACTS/КОНТАКТЫ ---------------------------------------*/
 .contacts {
+  position: relative;
   margin-top: 90px; }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    top: -46px;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: 320px 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #f9f9f9; }
 
 .contacts__list {
   margin-top: 29px; }
@@ -705,8 +731,8 @@ input[type="email"]::placeholder {
             transform: translateX(-29%); }
 
 .contacts__btn {
-  margin-top: 28px;
-  margin-bottom: 39px;
+  margin-top: 30px;
+  margin-bottom: 36px;
   font-size: 18px; }
 
 .contacts__container {
@@ -725,9 +751,12 @@ input[type="email"]::placeholder {
 /*--------------------------------- CONTACTS/КОНТАКТЫ - ПЛАНШЕТ ---------------------------------------*/
 @media (min-width: 768px) {
   .contacts {
-    position: relative;
     margin-top: 145px;
     margin-bottom: 18px; }
+    .contacts::before {
+      top: -75px;
+      height: 20px;
+      background-size: 768px 100%; }
   .contacts__heading {
     font-size: 43px;
     line-height: 1.16; }
@@ -782,6 +811,10 @@ input[type="email"]::placeholder {
     width: 100%;
     margin-top: 230px;
     margin-bottom: 65px; }
+    .contacts::before {
+      top: -162px;
+      height: 24px;
+      background-size: 1054px 24px; }
   .contacts__heading {
     max-width: 500px;
     padding-left: 168px;
@@ -902,7 +935,20 @@ input[type="email"]::placeholder {
     background-size: 320px 100%;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-    fill: #f1f1f1; }
+    fill: #f9f9f9; }
+
+.favorites__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .favorites__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .favorites__container {
+      width: 1150px; } }
 
 .favorites__moto {
   display: inline-block;
@@ -969,17 +1015,9 @@ input[type="email"]::placeholder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal; }
     .favorites::after {
-      content: "";
-      position: absolute;
       bottom: -68px;
-      left: -50px;
-      display: block;
-      width: 768px;
       height: 15px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-position: 50%;
-      background-size: 768px 15px;
-      fill: #f1f1f1; }
+      background-size: 768px 100%; }
   .favorites__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1012,8 +1050,8 @@ input[type="email"]::placeholder {
     padding-right: 0; }
   .favorites__pic {
     position: absolute;
-    top: 152px;
-    right: 0; }
+    top: 108px;
+    right: 49px; }
   .favorites__price {
     display: block;
     width: 290px;
@@ -1030,7 +1068,6 @@ input[type="email"]::placeholder {
     .favorites::after {
       bottom: -96px;
       left: 0;
-      width: 1050px;
       height: 24px;
       background-size: 1054px 24px;
       -webkit-transform: rotate(180deg);
@@ -1052,8 +1089,8 @@ input[type="email"]::placeholder {
     padding-top: 15px;
     padding-left: 46px; }
   .favorites__pic {
-    top: -6px;
-    right: 0;
+    top: -51px;
+    right: 50px;
     z-index: 1; }
   .favorites__text {
     margin-bottom: 0;
@@ -1084,6 +1121,16 @@ input[type="email"]::placeholder {
   @media (min-width: 1150px) {
     .form__container {
       width: 1150px; } }
+
+.form__heading {
+  display: block;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .form__heading {
+      padding: 15px; } }
+  @media (min-width: 1150px) {
+    .form__heading {
+      padding: 25px; } }
 
 .form__text {
   display: inline-block;
@@ -1397,7 +1444,8 @@ input[type="email"]::placeholder {
 .form__notes {
   display: inline-block;
   font-size: 14px;
-  line-height: 1.14; }
+  line-height: 1.14;
+  color: #444444; }
 
 .form__btn {
   display: block;
@@ -1428,8 +1476,8 @@ input[type="email"]::placeholder {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
             justify-content: space-between;
-    width: 550px;
-    padding-left: 84px;
+    width: 554px;
+    padding-left: 88px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-box-pack: justify;
@@ -1485,10 +1533,7 @@ input[type="email"]::placeholder {
       border-radius: 50%; }
   .form__label--checkbox {
     width: 204px;
-    padding-top: 23px;
-    padding-right: 10px;
-    padding-bottom: 35px;
-    padding-left: 80px; }
+    padding: 24px 15px 35px 80px; }
     .form__label--checkbox::after {
       top: 24px;
       left: 10px;
@@ -1509,7 +1554,7 @@ input[type="email"]::placeholder {
       padding-bottom: 32px; }
     .form__fieldset--checkbox {
       width: 100%;
-      padding-top: 42px;
+      padding-top: 40px;
       padding-bottom: 34px;
       background-color: #f1f1f1; }
     .form__fieldset--text {
@@ -1602,8 +1647,7 @@ input[type="email"]::placeholder {
   .form__notes {
     padding-top: 33px;
     font-size: 17px;
-    line-height: 1.76;
-    color: #444444; }
+    line-height: 1.76; }
   .form__btn {
     width: 230px;
     margin-top: 22px;
@@ -1643,8 +1687,8 @@ input[type="email"]::placeholder {
   .form__legend--text {
     width: 65px; }
   .form__checkbox--list {
-    width: 800px;
-    padding-left: 32px; }
+    width: 804px;
+    padding-left: 36px; }
   .form__label--checkbox {
     width: 242px; }
   .form__text--list {
@@ -1770,12 +1814,12 @@ input[type="email"]::placeholder {
 
 .main-nav__item {
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 28px;
-  padding-left: 76px;
+  padding: 27px 30px 28px 76px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .main-nav__item--catalog {
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .main-nav__item--basket {
+    border-bottom: none; }
 
 .main-nav__list--promo {
   display: none; }
@@ -2145,7 +2189,7 @@ input[type="email"]::placeholder {
     min-height: 177px;
     background-color: #f1f1f1; }
   .page-top--catalog {
-    padding-top: 70px; }
+    padding-top: 60px; }
 
 .page-top__heading {
   width: 320px;
@@ -2176,8 +2220,8 @@ input[type="email"]::placeholder {
 @media (min-width: 768px) {
   .page-top--catalog, .page-top--form {
     margin-top: -80px;
-    padding-top: 96px;
-    padding-bottom: 94px; }
+    padding-top: 82px;
+    padding-bottom: 78px; }
     .page-top--catalog::after, .page-top--form::after {
       content: "";
       position: absolute;
@@ -2217,7 +2261,8 @@ input[type="email"]::placeholder {
 
 @media (min-width: 1150px) {
   .page-top--catalog, .page-top--form {
-    min-height: 255px; }
+    min-height: 255px;
+    padding-top: 70px; }
     .page-top--catalog::after, .page-top--form::after {
       bottom: -19px;
       left: 0;
@@ -2401,6 +2446,9 @@ input[type="email"]::placeholder {
   .product-card:hover {
     -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
+  .product-card:active {
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
 
 .product-card__spec {
   display: -webkit-box;
@@ -2531,12 +2579,16 @@ input[type="email"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 30px;
+  padding-bottom: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal; }
   .production:hover {
     -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
+  .production:active {
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
 
 .production__video {
   position: relative;
@@ -2565,7 +2617,7 @@ input[type="email"]::placeholder {
   .production__play:active {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    opacity: 0.5; }
+    opacity: 0.3; }
 
 .production__discription {
   padding-top: 14px;
@@ -2586,7 +2638,7 @@ input[type="email"]::placeholder {
   display: block;
   width: 192px;
   margin-top: 25px;
-  margin-bottom: 33px;
+  margin-bottom: 16px;
   margin-left: 33px; }
 
 .production__heading {
@@ -2660,7 +2712,7 @@ input[type="email"]::placeholder {
   .production__order {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 46px;
+    margin-bottom: 30px;
     margin-left: 2px;
     padding-right: 100px;
     padding-left: 100px; } }
@@ -2769,7 +2821,7 @@ input[type="email"]::placeholder {
 /*--------------------------------- ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
 @media (min-width: 768px) {
   .page-footer {
-    padding-top: 50px; }
+    padding-top: 54px; }
   .page-footer__container {
     width: 320px;
     margin: 0 auto;
@@ -2810,26 +2862,15 @@ input[type="email"]::placeholder {
 
 @media (min-width: 1150px) {
   .page-footer__logo {
-    margin-right: 100px; } }
+    margin-right: 100px; }
+  .page-footer__icon-htmlacademy {
+    top: 13px;
+    right: -7px; } }
 
 /*--------------------------------- REVIEWS / ОТЗЫВЫ ---------------------------------------*/
 .reviews {
   position: relative;
   padding-top: 24px; }
-  .reviews::after {
-    content: "";
-    position: absolute;
-    bottom: -52px;
-    display: block;
-    width: 100%;
-    height: 7px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: center bottom;
-    background-size: 320px 7px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    fill: #f9f9f9; }
 
 .reviews__body {
   width: 320px;
@@ -2886,7 +2927,7 @@ input[type="email"]::placeholder {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 31px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal; }
 
@@ -2905,13 +2946,6 @@ input[type="email"]::placeholder {
     padding-top: 80px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal; }
-    .reviews::after {
-      bottom: -87px;
-      width: 768px;
-      height: 20px;
-      background-size: 768px 20px;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
     .reviews::before {
       content: "";
       position: absolute;
@@ -2919,9 +2953,9 @@ input[type="email"]::placeholder {
       left: 0;
       display: block;
       width: 350px;
-      height: 475px;
+      height: 459px;
       background: #f9f9f9 url("../img/review@1x.jpg") no-repeat;
-      background-size: 350px 475px; } }
+      background-size: 350px 459px; } }
 
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .reviews::before {
@@ -2995,13 +3029,6 @@ input[type="email"]::placeholder {
     width: 1050px;
     margin-top: 80px;
     padding-top: 68px; }
-    .reviews::after {
-      bottom: -93px;
-      width: 1050px;
-      height: 24px;
-      background-size: 1054px 24px;
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
     .reviews::before {
       height: 457px;
       background-size: 350px 457px; }
@@ -3052,7 +3079,7 @@ input[type="email"]::placeholder {
   max-width: 260px;
   min-height: 30px;
   margin: 0 auto;
-  padding: 27px 38px 23px;
+  padding: 29px 40px 24px;
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-box-orient: horizontal;

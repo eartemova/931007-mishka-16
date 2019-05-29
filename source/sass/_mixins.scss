@@ -18,3 +18,16 @@
     width: $desktop-width;
   }
 }
+
+@mixin heading {
+  display: block;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+}

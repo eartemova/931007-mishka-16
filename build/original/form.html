@@ -6,7 +6,6 @@
     <meta name="format-detection" content="telephone=yes">
     <title>HTML Academy: Мишка | Учебный проект </title>
     <link rel="stylesheet" href="css/style_mini.css">
-    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="">
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="shortcut icon" href="favicon.ico">
@@ -45,9 +44,9 @@
         <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
-    <main class="form-main">
+    <main>
       <div class="page-top page-top--catalog">
-        <h1 class="heading heading--primary">Вязание на заказ</h1>
+        <h1 class="heading heading--primary form__heading">Вязание на заказ</h1>
       </div>
       <section class="form">
         <div class="form__container">
@@ -122,7 +121,7 @@
               <label class="form__label form__label--tel" for="tel"></label>
               <input class="form__control form__control--tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required="">
               <svg class="form__phone-svg" width="24.829" height="24.333">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -132,7 +131,7 @@
               <label class="form__label form__label--email" for="email"></label>
               <input class="form__control form__control--email" id="email" type="email" name="email" placeholder="Ваш Email*" required="">
               <svg class="form__mail-svg" width="32" height="32">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
               </svg>
             </div>
           </div>
@@ -155,7 +154,8 @@
     <footer class="page-footer">
       <div class="page-footer__container">
         <a href="#" class="page-footer__logo">
-          <svg width="102" height="34" aria-label="Логотип - Магазин Мишка"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+          <svg width="102" height="34" aria-label="Логотип - Магазин Мишка">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <ul class="social-list">

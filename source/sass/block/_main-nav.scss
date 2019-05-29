@@ -73,13 +73,15 @@
 
 .main-nav__item {
   width: 100%;
-  padding-left: 76px;
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding: 27px 30px 28px 76px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   &--catalog {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &--basket {
+    border-bottom: none;
   }
 }
 

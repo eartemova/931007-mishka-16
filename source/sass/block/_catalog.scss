@@ -1,11 +1,12 @@
 /*--------------------------------- CATALOG/КАТАЛОГ ---------------------------------------*/
-//.catalog {
-//  margin-bottom: 55px;
-//}
 
 .catalog__container {
   @include container;
   margin-bottom: 55px;
+}
+
+.catalog__heading {
+  @include heading;
 }
 
 .catalog__list {

@@ -13,12 +13,17 @@
     left: 0;
     height: 6px;
     width: 100%;
-    fill: #f1f1f1;
+    fill: #f9f9f9;
     background-size: 320px 100%;
     background-repeat: repeat-x;
     background-position: center bottom;
     transform: rotate(180deg);
   }
+}
+
+.favorites__container {
+  @include container;
+  position: relative;
 }
 
 .favorites__moto {
@@ -89,15 +94,9 @@
     flex-wrap: wrap;
 
     &::after {
-      @include pseudo;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-position: 50%;
       bottom: -68px;
-      left: -50px;
       height: 15px;
-      width: 768px;
-      fill: #f1f1f1;
-      background-size: 768px 15px;
+      background-size: 768px 100%;
     }
   }
 
@@ -142,8 +141,8 @@
 
   .favorites__pic {
     position: absolute;
-    top: 152px;
-    right: 0;
+    top: 108px;
+    right: 49px;
   }
 
   .favorites__price {
@@ -167,7 +166,6 @@
       bottom: -96px;
       left: 0;
       height: 24px;
-      width: 1050px;
       fill: #f1f1f1;
       background-size: 1054px 24px;
       transform: rotate(180deg);
@@ -191,8 +189,8 @@
   }
 
   .favorites__pic {
-    top: -6px;
-    right: 0;
+    top: -51px;
+    right: 50px;
     z-index: 1;
   }
 

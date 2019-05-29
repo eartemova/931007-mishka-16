@@ -4,6 +4,10 @@
   @include container;
 }
 
+.form__heading {
+  @include heading;
+}
+
 .form__text {
   display: inline-block;
   font-size: 13px;
@@ -344,6 +348,7 @@
   display: inline-block;
   font-size: 14px;
   line-height: 1.14;
+  color: $color-text-paragraph;
 }
 
 .form__btn {
@@ -370,12 +375,12 @@
   }
 
   .form__checkbox--list {
-    width: 550px;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 84px;
+    width: 554px;
+    padding-left: 88px;
   }
 
   .form__text--list {
@@ -443,10 +448,7 @@
     }
 
     &--checkbox {
-      padding-top: 23px;
-      padding-left: 80px;
-      padding-right: 10px;
-      padding-bottom: 35px;
+      padding: 24px 15px 35px 80px;
       width: 204px;
 
       &::after {
@@ -476,7 +478,7 @@
     &--checkbox {
       background-color: #f1f1f1;
       width: 100%;
-      padding-top: 42px;
+      padding-top: 40px;
       padding-bottom: 34px;
     }
 
@@ -587,7 +589,6 @@
     font-size: 17px;
     line-height: 1.76;
     padding-top: 33px;
-    color: $color-text-paragraph;
   }
 
   .form__btn {
@@ -658,8 +659,8 @@
   }
 
   .form__checkbox--list {
-    width: 800px;
-    padding-left: 32px;
+    width: 804px;
+    padding-left: 36px;
   }
 
   .form__label {

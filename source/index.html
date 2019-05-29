@@ -6,7 +6,6 @@
     <meta name="format-detection" content="telephone=yes"/>
     <title>HTML Academy: Мишка | Учебный проект </title>
     <link rel="stylesheet" href="css/style_mini.css">
-    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin>
     <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="shortcut icon" href="favicon.ico">
@@ -66,43 +65,45 @@
           </ul>
         </section>
       </div>
-      <div class="container">
-        <section class="favorites">
+      <section class="favorites">
+        <div class="favorites__container">
           <div class="favorites__title">
             <h2 class="heading heading--secondary favorites__heading">Вязаные корзинки</h2>
             <span class="favorites__moto">Товар Недели</span>
           </div>
-          <div class="favorites__text">
-            <p class="favorites__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <table class="favorites__spec">
-              <tr>
-                <td class="favorites__value">Цвет:</td>
-                <td class="favorites__field">«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <td class="favorites__value">Диаметр:</td>
-                <td class="favorites__field">25 см.</td>
-              </tr>
-              <tr>
-                <td class="favorites__value">Высота:</td>
-                <td class="favorites__field">15 см.</td>
-              </tr>
-            </table>
-          </div>
-          <div class="favorites__pic">
-            <picture class="favorites__picture">
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="favorites__pic-img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар Недели">
-            </picture>
-          </div>
-          <span class="favorites__price">Цена: 990 руб.</span>
-          <a href="favorites-modal.html" class="btn btn--white favorites__btn btn-js">Заказать</a>
-        </section>
-        <section class="about">
+            <div class="favorites__text">
+              <p class="favorites__discription">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <table class="favorites__spec">
+                <tr>
+                  <td class="favorites__value">Цвет:</td>
+                  <td class="favorites__field">«Тиффани»/серый</td>
+                </tr>
+                <tr>
+                  <td class="favorites__value">Диаметр:</td>
+                  <td class="favorites__field">25 см.</td>
+                </tr>
+                <tr>
+                  <td class="favorites__value">Высота:</td>
+                  <td class="favorites__field">15 см.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="favorites__pic">
+              <picture class="favorites__picture">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="favorites__pic-img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар Недели">
+              </picture>
+            </div>
+            <span class="favorites__price">Цена: 990 руб.</span>
+            <a href="favorites-modal.html" class="btn btn--white favorites__btn btn-js">Заказать</a>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container">
           <h2 class="heading heading--secondary">Коротко о нас:</h2>
           <ul class="about__list">
             <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
@@ -112,8 +113,8 @@
             <li class="about__item about__item--local">Поддержка отечественного производителя</li>
             <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="reviews">
         <div class="reviews__body">
           <h2 class="heading heading--secondary reviews__heading">Отзывы</h2>
