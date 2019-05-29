@@ -32,7 +32,7 @@ gulp.task("css", function () {
       autoprefixer(),
       sorting(sortingOptions)
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("build/original"))
     .pipe(csso())
     .pipe(rename("style_mini.css"))
     .pipe(sourcemap.write("."))
@@ -69,9 +69,8 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("build/original"))
   .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(rename({ suffix: '.mini' }))
   .pipe(gulp.dest("build"));
 });
 
