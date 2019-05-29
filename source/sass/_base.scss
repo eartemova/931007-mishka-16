@@ -24,3 +24,11 @@ img {
 a {
   text-decoration: none;
 }
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
+  color: #444444;
+  opacity: 0.3;
+}

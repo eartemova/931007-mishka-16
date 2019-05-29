@@ -1,0 +1,3126 @@
+@charset "UTF-8";
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap; }
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  /* 1 */
+  font-size: 1em;
+  font-family: monospace, monospace;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  border-bottom: none;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  /* 1 */
+  font-size: 1em;
+  font-family: monospace, monospace;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  /* 1 */
+  margin: 0;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  font-family: inherit;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  /* 2 */
+  display: table;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 1 */
+  color: inherit;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  /* 1 */
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  /* 1 */
+  font: inherit;
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+textarea::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.3; }
+
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.3; }
+
+textarea::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder,
+input[type="tel"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder {
+  color: #444444;
+  opacity: 0.3; }
+
+textarea::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder {
+  color: #444444;
+  opacity: 0.3; }
+
+/*--------------------------------- ABOUT/КОРОТКО О НАС ------------------------------------------*/
+.about {
+  margin-bottom: 16px;
+  padding-top: 70px;
+  text-align: left; }
+
+.about__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .about__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .about__container {
+      width: 1150px; } }
+
+.about__list {
+  margin-top: 18px;
+  padding: 0;
+  list-style: none; }
+
+.about__item {
+  position: relative;
+  padding-top: 70px;
+  padding-right: 10px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.18; }
+  .about__item--eco::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    display: block;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+    opacity: 1; }
+  .about__item--style::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 1px;
+    display: block;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+    opacity: 1;
+    fill: #63d1bb; }
+  .about__item--like::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 9px;
+    display: block;
+    width: 33px;
+    height: 27px;
+    background-image: url("../img/icon-feature-heart.svg");
+    opacity: 1;
+    fill: #63d1bb; }
+  .about__item--handmade::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 4px;
+    display: block;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+    opacity: 1;
+    fill: #63d1bb; }
+  .about__item--local::before {
+    content: "";
+    position: absolute;
+    top: 19px;
+    left: -5px;
+    display: block;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+    opacity: 1;
+    fill: #63d1bb; }
+  .about__item--gift::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 4px;
+    display: block;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+    opacity: 1;
+    fill: #63d1bb; }
+
+/*--------------------------------- ABOUT/КОРОТКО О НАС - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .about {
+    margin-top: 50px;
+    margin-bottom: 67px; }
+  .about__list {
+    margin-top: 0;
+    margin-left: 2px;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 0;
+            column-gap: 0; }
+  .about__item {
+    padding-top: 100px;
+    padding-right: 39px;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: left; }
+    .about__item--eco::before {
+      top: 50px; }
+    .about__item--style::before {
+      top: 48px; }
+    .about__item--like::before {
+      top: 50px; }
+    .about__item--handmade::before {
+      top: 53px; }
+    .about__item--local::before {
+      top: 51px; }
+    .about__item--gift::before {
+      top: 46px; } }
+
+/*--------------------------------- ABOUT/КОРОТКО О НАС - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .about {
+    margin-top: 84px;
+    margin-right: 0; }
+  .about__container {
+    padding-left: 220px; }
+  .about__list {
+    width: 700px;
+    margin-top: 4px;
+    margin-left: 5px; }
+  .about__item {
+    width: 334px;
+    padding-top: 98px; }
+    .about__item--eco::before {
+      top: 44px; }
+    .about__item--style::before {
+      top: 46px; }
+    .about__item--like::before {
+      top: 50px; }
+    .about__item--handmade::before {
+      top: 48px; }
+    .about__item--local::before {
+      top: 49px; }
+    .about__item--gift::before {
+      top: 46px; } }
+
+/*--------------------------------- BUTTONS/КНОПКИ ---------------------------------------*/
+.btn {
+  display: inline-block;
+  width: 260px;
+  min-height: 52px;
+  padding: 14px 20px 14px 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.18;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 2px #444444; }
+  .btn--white {
+    color: #444444;
+    background-color: #ffffff; }
+    .btn--white:hover {
+      color: #ffffff;
+      background-color: #444444; }
+    .btn--white:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #444444; }
+  .btn--blue {
+    color: #ffffff;
+    background-color: #63d1bb;
+    border: solid 2px #63d1bb; }
+
+.btn__slider {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 130px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ececec;
+  cursor: pointer; }
+  .btn__slider--back {
+    background-image: url("../img/icon-left-arrow.svg"); }
+  .btn__slider--frwd {
+    background-image: url("../img/icon-right-arrow.svg"); }
+  .btn__slider:hover {
+    opacity: 0.6; }
+  .btn__slider:active {
+    opacity: 0.3; }
+
+/*--------------------------------- BUTTONS/КНОПКИ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .btn {
+    width: 292px; } }
+
+/*--------------------------------- BUTTONS/КНОПКИ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 768px) {
+  .btn__slider {
+    width: 86px;
+    height: 40px;
+    border: none; } }
+
+/*--------------------------------- CATALOG/КАТАЛОГ ---------------------------------------*/
+.catalog__container {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .catalog__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .catalog__container {
+      width: 1150px; } }
+
+.catalog__heading {
+  display: block;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .catalog__heading {
+      padding: 15px; } }
+  @media (min-width: 1150px) {
+    .catalog__heading {
+      padding: 25px; } }
+
+.catalog__list {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  list-style: none;
+  text-align: center; }
+  .catalog__item:not(:first-of-type) {
+    margin-top: 30px; }
+
+/*--------------------------------- CATALOG/КАТАЛОГ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .catalog__container {
+    margin-bottom: 63px; }
+  .catalog__list {
+    margin-top: 66px;
+    margin-bottom: 0; }
+  .catalog__item:not(:first-of-type) {
+    margin-top: 54px; } }
+
+/*--------------------------------- CATALOG/КАТАЛОГ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .catalog__container {
+    margin-bottom: 105px; }
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+            align-items: flex-start;
+    margin-top: 129px;
+    -webkit-box-align: start;
+        -ms-flex-align: start; }
+  .catalog__item {
+        align-self: flex-start;
+    margin-bottom: 20px;
+    -ms-flex-item-align: start; }
+    .catalog__item:not(:first-of-type) {
+      margin-top: 0; }
+    .catalog__item:nth-child(3n+2) {
+      padding: 0 50px; } }
+
+/*--------------------------------- CONTACTS/КОНТАКТЫ ---------------------------------------*/
+.contacts {
+  position: relative;
+  margin-top: 90px; }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    top: -46px;
+    display: block;
+    width: 100%;
+    height: 7px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: 320px 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #f9f9f9; }
+
+.contacts__list {
+  margin-top: 29px; }
+
+.contacts__item a {
+  color: #444444; }
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 29px;
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+  color: #444444;
+  font-style: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal; }
+
+.contacts__email {
+  border-bottom: solid 1px #46c1ae; }
+  .contacts__email:hover {
+    color: #46c1ae; }
+  .contacts__email:active {
+    opacity: 0.3; }
+  .contacts__email:visited {
+    color: #444444; }
+
+.contacts__title {
+  display: inline-block;
+  width: 77px; }
+
+.contacts__email,
+.contacts__address {
+  display: inline-block;
+  width: 180px;
+  padding-right: 30px; }
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+  min-height: 457px;
+  margin-top: 38px;
+  margin-bottom: 7px;
+  text-align: center; }
+  .contacts__map::before {
+    content: "";
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    z-index: 3;
+    display: block;
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/icon-map-pin.svg");
+    -webkit-transform: translateX(-29%);
+            transform: translateX(-29%); }
+
+.contacts__btn {
+  margin-top: 30px;
+  margin-bottom: 36px;
+  font-size: 18px; }
+
+.contacts__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .contacts__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .contacts__container {
+      width: 1150px; } }
+
+/*--------------------------------- CONTACTS/КОНТАКТЫ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .contacts {
+    margin-top: 145px;
+    margin-bottom: 18px; }
+    .contacts::before {
+      top: -75px;
+      height: 20px;
+      background-size: 768px 100%; }
+  .contacts__heading {
+    font-size: 43px;
+    line-height: 1.16; }
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 52px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+  .contacts__item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 17px;
+    line-height: 1.76; }
+    .contacts__item:first-child {
+      display: block;
+      padding-right: 59px; }
+  .contacts__address {
+    width: 222px;
+    padding-right: 0; }
+  .contacts__email {
+    width: 200px;
+    padding-right: 0; }
+  .contacts__title {
+    width: 74px; }
+  .contacts__btn {
+    width: 230px;
+    margin-top: 49px;
+    font-size: 17px; }
+  .contacts__map {
+    margin-top: 29px; }
+  .contacts__flag {
+    position: relative; }
+    .contacts__flag::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: 51px;
+      display: block;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg"); } }
+
+/*--------------------------------- CONTACTS/КОНТАКТЫ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .contacts {
+    position: relative;
+    width: 100%;
+    margin-top: 230px;
+    margin-bottom: 65px; }
+    .contacts::before {
+      top: -162px;
+      height: 24px;
+      background-size: 1054px 24px; }
+  .contacts__heading {
+    max-width: 500px;
+    padding-left: 168px;
+    font-size: 53px;
+    line-height: 1.08; }
+  .contacts__list {
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 51px;
+    margin-left: 174px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .contacts__container {
+    width: 1050px;
+    text-align: left; }
+  .contacts__map {
+    position: absolute;
+    top: -99px;
+    left: 50%;
+    width: 525px;
+    height: 457px; }
+    .contacts__map::before {
+      top: 146px;
+      -webkit-transform: translateX(-36%);
+              transform: translateX(-36%); }
+  .contacts__btn {
+    margin-top: 55px;
+    margin-left: 125px; }
+  .contacts__title {
+    width: 77px; }
+  .contacts__email {
+    margin-left: -1px; }
+  .contacts__flag::before {
+    top: -7px;
+    left: 113px; } }
+
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР ------------------------------------------*/
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР - ПЛАНШЕТ ------------------------------------------*/
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px; } }
+
+/*--------------------------------- CONTAINER/КОНТЕЙНЕР - ДЕСКТОП ------------------------------------------*/
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+    padding-right: 50px;
+    padding-left: 50px; } }
+
+/*--------------------------------- COPYRIGHT/АВТОРСКИЕ ПРАВА ------------------------------------------*/
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 183px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 26px;
+  vertical-align: baseline; }
+  .copyright:hover .copyright__logo {
+    fill: #46c1ae; }
+  .copyright:active {
+    opacity: 0.3; }
+
+.copyright__text {
+  padding-right: 29px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 0.95;
+  text-align: left;
+  color: #000000;
+  letter-spacing: normal; }
+
+.copyright__logo {
+  margin-top: -5px;
+  fill: #63d1bb; }
+
+/*--------------------------------- COPYRIGHT/АВТОРСКИЕ ПРАВА - ПЛАНШЕТ ------------------------------------------*/
+@media (min-width: 768px) {
+  .copyright {
+            justify-content: flex-end;
+    width: 207px;
+    margin: 0;
+    padding-top: 12px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end; } }
+
+/*--------------------------------- COPYRIGHT/АВТОРСКИЕ ПРАВА - ДЕСКТОП ------------------------------------------*/
+@media (min-width: 1150px) {
+  .copyright {
+    padding-top: 12px; } }
+
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ ---------------------------------------*/
+.favorites {
+  position: relative;
+  margin: auto;
+  padding-top: 26px;
+  text-align: left; }
+  .favorites::after {
+    content: "";
+    position: absolute;
+    bottom: -43px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: 320px 100%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    fill: #f9f9f9; }
+
+.favorites__container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .favorites__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .favorites__container {
+      width: 1150px; } }
+
+.favorites__moto {
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #63d1bb;
+  text-transform: uppercase; }
+
+.favorites__discription {
+  margin-bottom: 18px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444; }
+
+.favorites__spec {
+  display: table;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  border-collapse: collapse;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.33;
+  text-align: left;
+  color: #444444;
+  border: none; }
+
+.favorites__value,
+.favorites__field {
+  padding-top: 10px;
+  padding-right: 27px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.favorites__pic {
+  margin-bottom: 20px; }
+
+.favorites__price {
+  display: block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.41;
+  text-align: center;
+  color: #444444; }
+
+.favorites__btn {
+  margin-top: 27px; }
+
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .favorites {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 46px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+    .favorites::after {
+      bottom: -68px;
+      height: 15px;
+      background-size: 768px 100%; }
+  .favorites__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-span: all;
+            column-span: all; }
+  .favorites__moto {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 76px;
+    padding-top: 4px;
+    padding-left: 144px;
+    line-height: 1;
+    text-align: center; }
+  .favorites__text {
+    display: inline-block;
+    width: 310px;
+    padding-top: 30px; }
+  .favorites__discription {
+    width: 300px;
+    font-size: 17px;
+    line-height: 1.76; }
+  .favorites__spec {
+    width: 290px;
+    margin-top: 38px; }
+  .favorites__value {
+    padding-right: 0; }
+  .favorites__field {
+    padding-right: 0; }
+  .favorites__pic {
+    position: absolute;
+    top: 108px;
+    right: 49px; }
+  .favorites__price {
+    display: block;
+    width: 290px;
+    margin-top: 31px;
+    margin-bottom: 7px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center; } }
+
+/*--------------------------------- FAVORITES/ВЯЗАНЫЕ КОРЗИНКИ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .favorites {
+    margin-top: 78px; }
+    .favorites::after {
+      bottom: -96px;
+      left: 0;
+      height: 24px;
+      background-size: 1054px 24px;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      fill: #f1f1f1; }
+  .favorites__title {
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end; }
+    .favorites__title .favorites__heading {
+      z-index: 2;
+      padding-left: 96px; }
+  .favorites__moto {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 46px; }
+  .favorites__pic {
+    top: -51px;
+    right: 50px;
+    z-index: 1; }
+  .favorites__text {
+    margin-bottom: 0;
+    margin-left: 174px;
+    padding-top: 49px; }
+  .favorites__discription {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .favorites__spec {
+    margin-top: 50px; }
+  .favorites__price {
+    margin-top: 83px;
+    margin-bottom: 0;
+    margin-left: 175px; }
+  .favorites__btn {
+    margin-top: 37px;
+    margin-left: 175px; } }
+
+/*--------------------------------- FORM/ФОРМА - ПЛАНШЕТ ---------------------------------------*/
+.form__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .form__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .form__container {
+      width: 1150px; } }
+
+.form__heading {
+  display: block;
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .form__heading {
+      padding: 15px; } }
+  @media (min-width: 1150px) {
+    .form__heading {
+      padding: 25px; } }
+
+.form__text {
+  display: inline-block;
+  margin: 0;
+  padding: 22px 0 10px 0;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: #444444; }
+
+.form__fieldset {
+  margin: 0 auto;
+  padding: 0;
+  border: none; }
+  .form__fieldset--radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+    margin-top: 0;
+    padding: 0 30px 22px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .form__fieldset--checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+    padding: 0 30px 2px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .form__fieldset--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 320px;
+    padding: 0 30px 4px 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .form__fieldset--tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    padding: 0 30px 16px 30px; }
+  .form__fieldset--email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    padding: 0 30px 18px 30px; }
+  .form__fieldset--textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    padding: 0 30px 12px 30px; }
+
+.form__radio--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; }
+
+.form__checkbox--list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.form__initials {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.form__legend,
+.form__field {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 0.94;
+  color: #63d1bb;
+  text-transform: uppercase; }
+  .form__legend::after,
+  .form__field::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 62px;
+    display: block;
+    width: 197px;
+    height: 1px;
+    background-color: #63d1bb; }
+
+.form__field--email {
+  margin-top: 16px;
+  margin-bottom: 0; }
+  .form__field--email::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 81px;
+    display: block;
+    width: 179px;
+    height: 1px;
+    margin-bottom: 10px;
+    background-color: #63d1bb; }
+
+.form__tel,
+.form__email {
+  position: relative;
+  width: 100%; }
+
+.form__phone-svg {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: 17px;
+  display: block;
+  opacity: 0.2; }
+
+.form__mail-svg {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 10px;
+  display: block;
+  opacity: 0.2; }
+
+.form__field--tel {
+  margin-bottom: 0; }
+
+.form__field--textarea {
+  margin-bottom: 7px; }
+  .form__field--textarea::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 63px;
+    display: block;
+    width: 196px;
+    height: 1px;
+    background-color: #63d1bb; }
+
+.form__legend li {
+  display: inline-block;
+  padding: 0; }
+
+.form__label {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.06; }
+  .form__label--radio {
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-left: 62px; }
+    .form__label--radio::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 1px;
+      display: block;
+      width: 38px;
+      height: 38px;
+      border: 2px solid #444444;
+      border-radius: 50%; }
+    .form__label--radio::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 12px;
+      display: block;
+      display: none;
+      width: 16px;
+      height: 16px;
+      background-color: #62d1ba;
+      border-radius: 50%; }
+  .form__label--checkbox {
+    width: 250px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    padding-left: 62px; }
+    .form__label--checkbox::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 1px;
+      display: block;
+      width: 38px;
+      height: 38px;
+      border: 2px solid #444444; }
+    .form__label--checkbox::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 8px;
+      display: block;
+      display: none;
+      width: 23px;
+      height: 17px;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-size: 23px 17px; }
+  .form__label--text {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 0; }
+
+.form__control {
+  width: 100%;
+  font-weight: 200;
+  color: #444444;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  border-left: none; }
+  .form__control--radio:hover + .form__label--radio::before {
+    border: 2px solid #62d1ba; }
+  .form__control--radio:active + .form__label--radio::before {
+    border: 2px solid #444444;
+    opacity: 0.3; }
+  .form__control--checkbox:hover + .form__label--checkbox::before {
+    border: 2px solid #62d1ba; }
+  .form__control--checkbox:active + .form__label--checkbox::before {
+    border: 2px solid #444444;
+    opacity: 0.3; }
+  .form__control--text {
+    margin-bottom: 14px;
+    padding-right: 10px;
+    padding-bottom: 13px;
+    font-size: 17px;
+    line-height: 1.06; }
+  .form__control--tel {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-bottom: 14px;
+    font-size: 19px;
+    line-height: 0.95; }
+  .form__control--email {
+    padding-top: 6px;
+    padding-bottom: 16px;
+    font-size: 17px;
+    line-height: 1.06; }
+  .form__control--text:focus, .form__control--tel:focus, .form__control--email:focus, .form__control--textarea:focus {
+    outline: none; }
+  .form__control--radio:focus + label::before,
+  .form__control--checkbox:focus + label::before {
+    border-color: #62d1ba; }
+
+.form__control--radio:checked + .form__label--radio::after,
+.form__control--checkbox:checked + .form__label--checkbox::after {
+  display: block; }
+
+.form__control:hover,
+.form__control:focus {
+  border-bottom: 2px solid #62d1ba; }
+
+.form__control:hover + .form__phone-svg,
+.form__control:hover + .form__mail-svg,
+.form__control:focus + .form__phone-svg,
+.form__control:focus + .form__mail-svg {
+  opacity: 1;
+  fill: #62d1ba; }
+
+.form__textarea {
+  width: 320px; }
+
+.form__text-form {
+  width: 100%;
+  min-height: 142px;
+  margin-top: 0;
+  padding: 14px;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #444444;
+  border: 2px solid #444444; }
+  .form__text-form:hover, .form__text-form:focus {
+    border: solid 2px #62d1ba;
+    outline: none; }
+
+.form__filling {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .form__filling {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .form__filling {
+      width: 1150px; } }
+
+.form__notes {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #444444; }
+
+.form__btn {
+  display: block;
+  margin: 30px 0 55px 0; }
+
+/*--------------------------------- FORM/ФОРМА - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .form__text {
+    margin: 0 auto;
+    padding: 60px 0 50px 0;
+    font-size: 17px;
+    line-height: 1.76; }
+  .form__radio--list {
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    margin-top: 0;
+    margin-left: 16px;
+    list-style: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .form__checkbox--list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+            justify-content: space-between;
+    width: 554px;
+    padding-left: 88px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify; }
+  .form__text--list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+            justify-content: space-between;
+    width: 550px;
+    padding-top: 12px;
+    padding-left: 12px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify; }
+  .form__legend {
+    width: 150px;
+    margin-top: 26px; }
+    .form__legend--radio, .form__legend--checkbox, .form__legend--text {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .form__legend--radio::after, .form__legend--checkbox::after, .form__legend--text::after {
+        display: none; }
+  .form__legend--initials {
+    margin-top: 12px; }
+  .form__legend--checkbox {
+    width: 80px; }
+  .form__label--radio, .form__label--checkbox, .form__label--text {
+    font-size: 19px;
+    line-height: 0.95; }
+    .form__label--radio::before, .form__label--checkbox::before, .form__label--text::before {
+      top: 8px;
+      left: 0;
+      width: 52px;
+      height: 52px; }
+  .form__label--radio {
+    padding-top: 22px;
+    padding-right: 10px;
+    padding-bottom: 37px;
+    padding-left: 80px; }
+    .form__label--radio::after {
+      top: 23px;
+      left: 15px;
+      width: 22px;
+      height: 22px;
+      background-color: #62d1ba;
+      border-radius: 50%; }
+  .form__label--checkbox {
+    width: 204px;
+    padding: 24px 15px 35px 80px; }
+    .form__label--checkbox::after {
+      top: 24px;
+      left: 10px;
+      width: 33px;
+      height: 22px;
+      background-size: 33px 22px; }
+  .form__label--text {
+    padding-bottom: 48px;
+    padding-left: 50px; }
+  .form__fieldset {
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 768px;
+    padding: 0 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+    .form__fieldset--radio {
+      padding-bottom: 32px; }
+    .form__fieldset--checkbox {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 34px;
+      background-color: #f1f1f1; }
+    .form__fieldset--text {
+      width: 768px;
+      padding-top: 54px;
+      padding-bottom: 20px; }
+    .form__fieldset--tel, .form__fieldset--email {
+      width: 100%;
+      background-color: #f1f1f1; }
+    .form__fieldset--tel {
+      padding-top: 55px;
+      padding-bottom: 25px; }
+    .form__fieldset--email {
+      padding-top: 0;
+      padding-bottom: 50px; }
+    .form__fieldset--textarea {
+      padding-top: 50px;
+      padding-bottom: 30px; }
+  .form__contacts--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+            align-items: baseline;
+    width: 550px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline; }
+  .form__control {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 0.95; }
+    .form__control--text {
+      width: 100%;
+      padding-bottom: 13px;
+      padding-left: 22px; }
+    .form__control--tel, .form__control--email {
+      margin-left: 109px;
+      padding-right: 60px;
+      padding-bottom: 12px;
+      padding-left: 15px;
+      background-color: #f1f1f1; }
+  .form__tel,
+  .form__email,
+  .form__textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+            align-items: baseline;
+    width: 668px;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline; }
+  .form__textarea {
+        align-self: center;
+    -ms-flex-item-align: center; }
+  .form__text-form {
+    width: 501px;
+    margin-left: 128px;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 19px;
+    line-height: 0.95; }
+  .form__field::after {
+    display: none; }
+  .form__field--tel, .form__field--email {
+    display: inline-block;
+    width: 84px; }
+  .form__field--textarea {
+    margin-top: 18px;
+    padding-left: 0; }
+  .form__filling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+    padding-bottom: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify; }
+  .form__notes {
+    padding-top: 33px;
+    font-size: 17px;
+    line-height: 1.76; }
+  .form__btn {
+    width: 230px;
+    margin-top: 22px;
+    margin-bottom: 0; }
+  .form__phone-svg {
+    right: 26px; }
+  .form__mail-svg {
+    right: 22px; }
+  .form__wrapper {
+    width: 668px;
+    margin: 0 auto; } }
+
+/*--------------------------------- FORM/ФОРМА - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .form__text {
+    margin: 0 auto;
+    padding: 122px 200px 50px 175px; }
+  .form__fieldset--radio {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 58px 32px 114px; }
+  .form__fieldset--checkbox {
+    padding-top: 11px;
+    padding-bottom: 7px; }
+  .form__fieldset--text {
+    width: 1050px;
+    padding-left: 61px; }
+  .form__fieldset--textarea {
+    width: 1150px;
+    padding-bottom: 26px; }
+  .form__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 31px 21px 26px 60px; }
+  .form__legend--radio {
+    width: 95px; }
+  .form__legend--text {
+    width: 65px; }
+  .form__checkbox--list {
+    width: 804px;
+    padding-left: 36px; }
+  .form__label--checkbox {
+    width: 242px; }
+  .form__text--list {
+    width: 750px; }
+  .form__contacts--item {
+    width: 750px; }
+  .form__control--tel, .form__control--email {
+    width: 700px;
+    margin-left: 33px;
+    padding-left: 12px; }
+  .form__tel,
+  .form__email,
+  .form__textarea {
+    width: 1050px;
+    padding-left: 62px; }
+  .form__filling {
+    width: 1050px;
+    padding-right: 175px;
+    padding-left: 175px; }
+  .form__text-form {
+    width: 700px;
+    margin-left: 74px; }
+  .form__phone-svg {
+    right: 183px; }
+  .form__mail-svg {
+    right: 180px;
+    bottom: 8px; } }
+
+/*--------------------------------- HEADING/ЗАГОЛОВКИ ---------------------------------------*/
+.heading {
+  margin: 0;
+  font-weight: 700;
+  color: #000000;
+  font-style: normal; }
+  .heading--primary {
+    font-size: 27px;
+    line-height: 1.11; }
+  .heading--secondary {
+    font-size: 25px;
+    line-height: 1.2; }
+  .heading--tertialy {
+    font-size: 17px;
+    line-height: 1.41; }
+
+/*--------------------------------- HEADING/ЗАГОЛОВКИ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .heading--primary {
+    font-size: 43px;
+    line-height: 1.16; }
+  .heading--secondary {
+    font-size: 43px;
+    line-height: 1.16; }
+  .heading--tertialy {
+    font-size: 43px;
+    line-height: 1.16; } }
+
+/*--------------------------------- HEADING/ЗАГОЛОВКИ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .heading--primary, .heading--secondary, .heading--tertialy {
+    font-size: 53px;
+    line-height: 1.08; } }
+
+/*--------------------------------- MAIN NAV/ ГЛАВНАЯ НАВИГАЦИЯ ------------------------------------------*/
+.main-nav {
+  position: relative;
+  width: 320px;
+  text-align: center;
+  background-color: transparent; }
+  .main-nav--mobile-opened .main-nav__toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: inline-block; }
+    .main-nav--mobile-opened .main-nav__toggle::before, .main-nav--mobile-opened .main-nav__toggle::after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      right: 2px;
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #000000; }
+    .main-nav--mobile-opened .main-nav__toggle::before {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .main-nav--mobile-opened .main-nav__toggle::after {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .main-nav--mobile-opened .main-nav__toggle:active::before, .main-nav--mobile-opened .main-nav__toggle:active::after {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .main-nav--mobile-closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    -webkit-box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+            box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000; }
+
+.main-nav__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100px;
+  margin-bottom: 19px;
+  margin-left: 13px;
+  padding-top: 22px; }
+  .main-nav__logo:hover {
+    opacity: 0.6; }
+  .main-nav__logo:active {
+    opacity: 0.3; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left; }
+
+.main-nav__item {
+  width: 100%;
+  padding: 27px 30px 28px 76px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .main-nav__item--catalog {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .main-nav__item--basket {
+    border-bottom: none; }
+
+.main-nav__list--promo {
+  display: none; }
+
+.main-nav__link {
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #000000; }
+  .main-nav__link--svg {
+    position: absolute;
+    top: 4px;
+    left: -44px;
+    width: 18px;
+    height: 18px;
+    opacity: 0.2; }
+  .main-nav__link:hover {
+    color: rgba(0, 0, 0, 0.6); }
+  .main-nav__link:hover .main-nav__link--svg {
+    opacity: 1;
+    fill: #63d1bb; }
+  .main-nav__link:active {
+    color: rgba(0, 0, 0, 0.3); }
+  .main-nav__link:active .main-nav__link--svg {
+    opacity: 0.3;
+    fill: #63d1bb; }
+
+.main-nav__delivery {
+  display: none; }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+@media (max-width: 767px) {
+  .main-nav--mobile-closed .main-nav__toggle:active::before {
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3); }
+  .main-nav--mobile-closed .main-nav__list {
+    display: none; }
+  .main-nav--mobile-nojs .main-nav__toggle {
+    display: none; }
+  .main-nav--mobile-nojs .main-nav__list {
+    display: block; }
+  .main-nav--mobile-nojs .main-nav__list--promo {
+    display: none; } }
+
+.main-nav__list--user {
+  margin-top: 0; }
+
+/*--------------------------------- MAIN NAV/ГЛАВНАЯ НАВИГАЦИЯ - ПЛАНШЕТ ------------------------------------------*/
+@media (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+  .main-nav__logo {
+            order: 1;
+    width: 320px;
+    min-height: 88px;
+    margin: 0;
+    padding-top: 22px;
+    text-align: left;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1; }
+  .main-nav__item {
+    margin: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border: none; }
+  .main-nav__link--catalog,
+  .main-nav__link--knitting {
+    font-size: 15px;
+    line-height: 1.6; }
+  .main-nav__list--offer,
+  .main-nav__list--user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-nav__list--offer {
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            order: 3;
+    width: 339px;
+    margin-top: 18px;
+    padding-left: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3; }
+  .main-nav__list--user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2; }
+  .main-nav__item--catalog,
+  .main-nav__item--knitting {
+    padding-top: 0; }
+  .main-nav__item--basket {
+    width: 262px;
+    padding-top: 31px;
+    padding-right: 0;
+    text-align: right; }
+  .main-nav__link--basket svg {
+    left: -49px;
+    width: 18px;
+    height: 18px; }
+  .main-nav__link--search svg {
+    top: -18px;
+    left: 36px;
+    width: 18px;
+    height: 18px; }
+  .main-nav__delivery {
+    z-index: 2;
+    display: inline-block;
+            order: 4;
+    width: 329px;
+    min-height: 79px;
+    padding-top: 18px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: right;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4; }
+  .main-nav__item--search {
+    width: 86px;
+    padding-top: 54px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+  .main-nav__link--search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0; }
+  .main-nav--mobile-opened .main-nav__toggle {
+    display: none; }
+  .main-nav__toggle {
+    display: none; } }
+
+/*--------------------------------- MAIN NAV/ГЛАВНАЯ НАВИГАЦИЯ - ДЕСКТОП------------------------------------------*/
+@media (min-width: 1150px) {
+  .main-nav {
+    width: 1050px; }
+  .main-nav__logo {
+            order: 2;
+    width: 312px;
+    padding-top: 8px;
+    padding-left: 64px;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2; }
+  .main-nav__list {
+    margin-top: 0; }
+  .main-nav__list--promo {
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+            order: 4;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4; }
+  .main-nav__list--offer {
+    z-index: 100;
+            order: 1;
+    width: 387px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1; }
+  .main-nav__list--user {
+            order: 4;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4; }
+  .main-nav__link--new-arrivals,
+  .main-nav__link--sale {
+    display: inline-block;
+    width: 220px;
+    padding-top: 18px;
+    font-size: 15px;
+    line-height: 1.6; }
+  .main-nav__link--catalog,
+  .main-nav__link--basket,
+  .main-nav__link--knitting {
+    font-size: 17px;
+    line-height: 1.41; }
+  .main-nav__link--search svg {
+    top: 6px;
+    left: 34px;
+    width: 18px;
+    height: 18px; }
+  .main-nav__link--basket svg {
+    top: 3px;
+    left: -53px;
+    width: 18px;
+    height: 18px; }
+  .main-nav__item {
+    min-height: 1px;
+    padding: 0; }
+    .main-nav__item--knitting {
+      padding-top: 31px;
+      padding-left: 36px; }
+    .main-nav__item--catalog {
+      padding-top: 31px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    .main-nav__item--search {
+      width: 86px;
+      padding-top: 31px;
+      font-size: 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 1px solid rgba(0, 0, 0, 0.1); }
+    .main-nav__item--basket {
+      width: 265px;
+      padding-top: 31px; }
+  .main-nav__delivery {
+    width: 610px;
+    background-color: transparent; } }
+
+/*--------------------------------- MODAL FORM/ МОДАЛЬНОЕ ОКНО ------------------------------------------*/
+.modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  display: none;
+  width: 320px;
+  min-height: 336px;
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+          box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.modal-form--show {
+  display: block; }
+
+.modal-form__heading {
+  margin-bottom: 12px;
+  padding: 0 53px;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase; }
+
+.modal-form__legend {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 2;
+  color: #444444; }
+
+.modal-form__fieldset {
+  text-align: center; }
+
+.modal-form__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+  margin-top: 36px;
+  margin-bottom: 38px;
+  padding: 0;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify; }
+
+.modal-form__item {
+  display: block; }
+
+.modal-form__label {
+  height: 52px;
+  padding: 12px 34px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 0.94;
+  text-transform: uppercase;
+  border: solid 2px rgba(68, 68, 68, 0.1); }
+  .modal-form__label:hover {
+    border: solid 2px rgba(68, 68, 68, 0.3); }
+  .modal-form__label:active {
+    border-color: #62d1ba; }
+
+.modal-form__control:checked + .modal-form__label {
+  border-color: #62d1ba; }
+
+.modal-form__btn {
+  width: 260px;
+  height: 54px;
+  padding-top: 6px; }
+
+/*--------------------------------- MODAL FORM/ МОДАЛЬНОЕ ОКНО - ПЛАНШЕТ ------------------------------------------*/
+@media (min-width: 768px) {
+  .modal-form {
+    width: 566px;
+    height: 336px;
+    padding: 34px 105px; }
+  .modal-form__heading {
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 1.9; }
+  .modal-form__legend {
+    font-size: 17px;
+    line-height: 1.76; }
+  .modal-form__label {
+    padding: 12px 50px; }
+  .modal-form__list {
+    margin-top: 39px;
+    margin-bottom: 47px; }
+  .modal-form__btn {
+    width: 350px;
+    height: 52px; } }
+
+/*--------------------------------- OVERLAY/ ОВЕРЛЕЙ ------------------------------------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 190;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); }
+
+.overlay--show {
+  display: block; }
+
+/*--------------------------------- TOP / ЗАГОЛОВОК ---------------------------------------*/
+.page-top {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .page-top--index {
+    width: 100%;
+    min-height: 282px;
+    padding-top: 71px;
+    background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -18px; }
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .page-top--index {
+        background: #f9f9f9 url("../img/hero-mobile@2x.jpg") no-repeat center -18px;
+        background-size: 575px auto; } }
+  .page-top--catalog, .page-top--form {
+    width: 100%;
+    min-height: 177px;
+    background-color: #f1f1f1; }
+  .page-top--catalog {
+    padding-top: 60px; }
+
+.page-top__heading {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .page-top__heading {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .page-top__heading {
+      width: 1150px; } }
+
+/*--------------------------------- TOP / ЗАГОЛОВОК - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .page-top--index {
+    position: relative;
+    width: 100%;
+    margin-top: -79px;
+    padding-top: 153px;
+    text-align: center;
+    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat center top; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-top--index {
+      background: #f9f9f9 url("../img/hero-tablet@2x.jpg") no-repeat center top;
+      background-size: 1150px auto; } }
+
+@media (min-width: 768px) {
+  .page-top--catalog, .page-top--form {
+    margin-top: -80px;
+    padding-top: 82px;
+    padding-bottom: 78px; }
+    .page-top--catalog::after, .page-top--form::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 33px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: contain; }
+  .page-top__heading {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .page-top__heading {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 768px) and (min-width: 1150px) {
+    .page-top__heading {
+      width: 1150px; } }
+
+/*--------------------------------- TOP / ЗАГОЛОВОК - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .page-top--index {
+    width: 100%;
+    margin-top: -80px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: #f9f9f9 url("../img/hero-desktop@1x.jpg") no-repeat center top; } }
+  @media (min-width: 1150px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 1.5dppx) {
+    .page-top--index {
+      background: #f9f9f9 url("../img/hero-desktop@2x.jpg") no-repeat center top;
+      background-size: 1150px auto; } }
+
+@media (min-width: 1150px) {
+  .page-top--catalog, .page-top--form {
+    min-height: 255px;
+    padding-top: 70px; }
+    .page-top--catalog::after, .page-top--form::after {
+      bottom: -19px;
+      left: 0;
+      width: 100%;
+      height: 34px;
+      background-position: 50%;
+      background-size: 1150px 34px; }
+  .page-top__heading {
+    width: 1050px;
+    margin: 0 auto; } }
+
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ ---------------------------------------*/
+.proposals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 320px;
+  margin-top: 151px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.proposals__list {
+  margin-top: -26px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none; }
+
+.proposals__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 320px;
+  min-height: 103px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 26px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.26;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none; }
+  @media (min-width: 768px) {
+    .proposals__link {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .proposals__link {
+      width: 1150px; } }
+  .proposals__link--interior {
+    background-color: #63d1bb; }
+  .proposals__link--toys {
+    background-color: #56c3b2; }
+
+.proposals__text {
+  width: 100px; }
+
+.proposals__link--interior:hover {
+  min-height: 108px;
+  margin-bottom: -5px;
+  background-color: #59d5bc;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
+
+.proposals__link--toys:hover {
+  height: 108px;
+  margin-bottom: -5px;
+  background-color: #46c1ae;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px); }
+
+.proposals__link--interior svg {
+  position: absolute;
+  top: 24px;
+  right: 25px;
+  overflow: hidden;
+  opacity: 0.5;
+  fill: #149080; }
+
+.proposals__link--toys svg {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  overflow: hidden;
+  opacity: 0.5;
+  fill: #149080; }
+
+.proposals__link--interior:hover svg,
+.proposals__link--toys:hover svg {
+  opacity: 0.7; }
+
+.proposals__link--interior:active svg,
+.proposals__link--toys:active svg {
+  opacity: 0.3; }
+
+.proposals__link--interior:active span,
+.proposals__link--toys:active span {
+  opacity: 0.3; }
+
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .proposals {
+    width: 668px;
+    margin: 0 auto;
+    margin-top: 373px; }
+    .proposals::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -14px;
+      display: block;
+      width: 100%;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: contain; }
+  .proposals__list {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .proposals__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 335px;
+    min-height: 119px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left; }
+    .proposals__link--interior svg {
+      top: 33px;
+      right: 25px; }
+    .proposals__link:hover {
+      min-height: 124px; }
+    .proposals__link--toys svg {
+      top: 33px;
+      right: 34px; } }
+
+/*--------------------------------- PROPOSALS / ПРЕДЛОЖЕНИЯ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .proposals {
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 358px; }
+    .proposals::after {
+      bottom: -19px;
+      background-size: 1250px 34px; }
+  .proposals__link {
+    width: 525px; }
+    .proposals__link--interior svg {
+      left: 439px; }
+    .proposals__link--toys svg {
+      top: 34px;
+      left: 430px; }
+  .proposals__list::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    display: block;
+    width: 1150px;
+    height: 41px;
+    background-position: -51px;
+    background-size: 1250px 41px; } }
+
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА ---------------------------------------*/
+.product-card {
+  text-align: left; }
+  .product-card:hover {
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
+  .product-card:active {
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
+
+.product-card__spec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px 28px 28px 28px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; }
+
+.product-card__basket {
+  display: inline-block;
+  padding-top: 24px;
+  overflow: hidden;
+  opacity: 0.2; }
+  .product-card__basket:hover {
+    opacity: 1; }
+  .product-card__basket:active {
+    opacity: 0.3; }
+  .product-card__basket:hover svg {
+    fill: #63d1bb; }
+
+.product-card__name {
+  color: #000000; }
+  .product-card__name:hover {
+    color: rgba(0, 0, 0, 0.6); }
+  .product-card__name:active {
+    color: rgba(0, 0, 0, 0.3); }
+
+.product-card__discription {
+  display: block;
+  margin-top: 8px;
+  padding-bottom: 19px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 2.2;
+  color: #444444; }
+
+.product-card__price {
+  display: inline-block;
+  width: 80px;
+  padding-top: 22px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6; }
+
+.product-card__img {
+  vertical-align: bottom; }
+
+.product-card__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify; }
+
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .product-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+  .product-card__link {
+    min-width: 334px; }
+  .product-card__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2; }
+  .product-card__spec {
+    width: 334px; }
+  .product-card__text {
+    display: inline-block;
+    min-height: 200px; }
+  .product-card__discription {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 2; }
+  .product-card__price {
+    width: 100px;
+    padding-left: 6px;
+    font-size: 17px;
+    line-height: 1.41; }
+  .product-card__basket {
+    padding-top: 24px;
+    padding-right: 4px; }
+  .product-card__buy {
+    margin-top: 34px; } }
+
+/*--------------------------------- PRODUCT CARD / КАРТОЧКА ТОВАРА - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .product-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .product-card__link {
+    min-width: 316px;
+    min-height: 462px; }
+  .product-card__spec {
+    width: 316px; }
+  .product-card__buy {
+    margin-top: 0; }
+  .product-card__text {
+    min-height: 97px; }
+  .product-card__discription {
+    padding-bottom: 0; }
+  .product-card__price {
+    padding-left: 0; } }
+
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО ---------------------------------------*/
+.production {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal; }
+  .production:hover {
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1); }
+  .production:active {
+    -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1); }
+
+.production__video {
+  position: relative;
+          order: 2;
+  width: 100%;
+  height: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2; }
+
+.production__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  margin-top: -39px;
+  margin-left: -49px;
+  font-size: 0;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  .production__play:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+  .production__play:active {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.3; }
+
+.production__discription {
+  padding-top: 14px;
+  padding-right: 33px;
+  padding-left: 33px; }
+
+.production__text {
+          order: 3;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: #444444;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3; }
+
+.production__order {
+  display: block;
+  width: 192px;
+  margin-top: 25px;
+  margin-bottom: 16px;
+  margin-left: 33px; }
+
+.production__heading {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 23px;
+  padding-bottom: 27px;
+  padding-left: 88px;
+  font-size: 17px;
+  line-height: 1.41; }
+  .production__heading::before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 33px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/icon-video.svg"); }
+
+.production__img {
+  vertical-align: bottom; }
+
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .production {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 53px; }
+  .production__video {
+            order: 1;
+    width: 668px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1; }
+    .production__video::after {
+      margin-top: -39px;
+      margin-left: -49px; }
+  .production__heading {
+            order: 2;
+    padding-top: 35px;
+    padding-bottom: 7px;
+    padding-left: 106px;
+    font-size: 20px;
+    line-height: 1.2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2; }
+    .production__heading::before {
+      top: 33px;
+      left: 42px; }
+  .production__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+            order: 3;
+    padding-right: 42px;
+    padding-left: 40px;
+    font-size: 15px;
+    line-height: 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .production__discription {
+    padding-top: 10px;
+    padding-right: 0;
+    padding-left: 0; }
+  .production__order {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    padding-right: 100px;
+    padding-left: 100px; } }
+
+/*--------------------------------- PRODUCTION / ПРОИЗВОДСТВО - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .production {
+    position: relative;
+            align-items: flex-end;
+    min-height: 456px;
+    margin-top: 36px;
+    margin-right: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end; }
+  .production__heading {
+            order: 2;
+    width: 330px;
+    padding-top: 95px;
+    padding-right: 52px;
+    padding-left: 41px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2; }
+    .production__heading::before {
+      top: 41px; }
+  .production__text {
+            order: 3;
+    width: 300px;
+    margin-top: 16px;
+    padding-right: 59px;
+    padding-left: 11px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3; }
+  .production__discription {
+    margin-top: 0; }
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+            order: 1;
+    min-width: 682px;
+    height: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1; }
+  .production__order {
+    margin-top: 31px;
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px; } }
+
+/*--------------------------------- PAGE HEADER / ШАПКА ---------------------------------------*/
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
+/*--------------------------------- PAGE HEADER / ШАПКА - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    padding-right: 50px;
+    padding-left: 50px; } }
+
+/*--------------------------------- PAGE HEADER / ШАПКА - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .page-header {
+    width: 1150px; } }
+
+/*--------------------------------- FOOTER/ ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
+.page-footer {
+  width: 100%;
+  min-height: 160px;
+  background-color: #f1f1f1; }
+
+.page-footer__logo {
+  display: none; }
+
+.page-footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+          justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify; }
+  @media (min-width: 768px) {
+    .page-footer__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .page-footer__container {
+      width: 1150px; } }
+
+/*--------------------------------- ФУТЕР - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .page-footer {
+    padding-top: 54px; }
+  .page-footer__container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .page-footer__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 768px) and (min-width: 1150px) {
+    .page-footer__container {
+      width: 1150px; } }
+
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+    height: 50px;
+    margin-right: 104px; }
+    .page-footer__logo:hover {
+      fill: #46c1ae; }
+    .page-footer__logo:active {
+      opacity: 0.3; } }
+
+/*--------------------------------- ФУТЕР - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .page-footer {
+    margin-top: 0; }
+  .page-footer__container {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px; } }
+  @media (min-width: 1150px) and (min-width: 768px) {
+    .page-footer__container {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) and (min-width: 1150px) {
+    .page-footer__container {
+      width: 1150px; } }
+
+@media (min-width: 1150px) {
+  .page-footer__logo {
+    margin-right: 100px; }
+  .page-footer__icon-htmlacademy {
+    top: 13px;
+    right: -7px; } }
+
+/*--------------------------------- REVIEWS / ОТЗЫВЫ ---------------------------------------*/
+.reviews {
+  position: relative;
+  padding-top: 24px; }
+
+.reviews__body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (min-width: 768px) {
+    .reviews__body {
+      width: 768px;
+      padding: 0 50px; } }
+  @media (min-width: 1150px) {
+    .reviews__body {
+      width: 1150px; } }
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.reviews__item {
+  padding-top: 24px; }
+
+.reviews__comment {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+  text-align: left;
+  color: #444444;
+  quotes: none; }
+
+.reviews__name {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.41;
+  text-align: left;
+  font-style: normal; }
+
+.reviews__link {
+  font-size: 17px;
+  line-height: 1.76;
+  text-align: left;
+  color: #444444; }
+  .reviews__link:hover {
+    color: #46c1ae; }
+  .reviews__link:active {
+    color: rgba(70, 193, 174, 0.3); }
+
+.reviews__slider-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 31px;
+  margin-bottom: 37px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal; }
+
+/*--------------------------------- REVIEWS / ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 80px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; }
+    .reviews::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 350px;
+      height: 459px;
+      background: #f9f9f9 url("../img/review@1x.jpg") no-repeat;
+      background-size: 350px 459px; } }
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews::before {
+    background: #f9f9f9 url("../img/review@2x.jpg") no-repeat; } }
+
+@media (min-width: 768px) {
+  .reviews__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.76;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal; }
+  .reviews__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 46px; }
+  .reviews__slider {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .reviews__btn {
+            align-items: flex-start;
+            order: -1;
+        align-self: flex-start;
+    width: 175px;
+    margin-left: auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+    -ms-flex-item-align: start; }
+  .reviews__heading {
+    z-index: 3;
+            order: -2;
+    margin-bottom: 50px;
+    margin-left: -4px;
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2; }
+  .reviews__comment {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.76; }
+  .reviews__name {
+    display: block;
+    max-width: 500px;
+    margin-top: 34px;
+    font-size: 18px;
+    line-height: 1.33; }
+  .reviews__link {
+    width: 100px; }
+  .reviews__slider-control {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    margin: 0;
+    border: none; } }
+
+/*--------------------------------- REVIEWS / ОТЗЫВЫ - ДЕСКТОП ---------------------------------------*/
+@media (min-width: 1150px) {
+  .reviews {
+    width: 1050px;
+    margin-top: 80px;
+    padding-top: 68px; }
+    .reviews::before {
+      height: 457px;
+      background-size: 350px 457px; }
+  .reviews__body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 93px; }
+  .reviews__heading {
+    margin-bottom: 50px;
+    margin-left: 171px; }
+  .reviews__list {
+    margin: 0;
+    padding: 0; }
+  .reviews__slider {
+    margin: 0;
+    padding-left: 175px; }
+  .reviews__item {
+    margin: 0;
+    padding: 0; }
+  .reviews__comment {
+    width: 772px;
+    margin-bottom: 43px;
+    padding: 0; }
+  .reviews__name {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-size: 17px; }
+  .reviews__btn {
+    margin-top: 9px;
+    margin-left: 478px; }
+  .reviews__slider-control {
+    right: -100px;
+    bottom: 4px;
+    margin: 0;
+    padding: 0; } }
+
+/*--------------------------------- SOCIAL LIST / СОЦИАЛЬНЫЕ СЕТИ ---------------------------------------*/
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+          align-items: center;
+  max-width: 260px;
+  min-height: 30px;
+  margin: 0 auto;
+  padding: 29px 40px 24px;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center; }
+
+.social-list__item {
+  width: 30px;
+  margin: 0 15px;
+  text-align: center; }
+
+.social-list__item svg:hover {
+  fill: #46c1ae; }
+
+.social-list__item svg:active {
+  opacity: 0.3; }
+
+.social-list__link {
+  display: block; }
+
+/*--------------------------------- SOCIAL LIST / СОЦИАЛЬНЫЕ СЕТИ - ПЛАНШЕТ ---------------------------------------*/
+@media (min-width: 768px) {
+  .social-list {
+    max-width: 185px;
+    margin: 0;
+    padding: 0;
+    border-bottom: none; } }
+
+/*--------------------------------- VISUALLY HIDDEN / ВИЗУАЛЬНО СКРЫТО ---------------------------------------*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%); }

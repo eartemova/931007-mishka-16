@@ -25,7 +25,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 50px;
+    padding-top: 54px;
   }
 
   .page-footer__container {
@@ -60,5 +60,10 @@
 
   .page-footer__logo {
     margin-right: 100px;
+  }
+
+  .page-footer__icon-htmlacademy {
+    top: 13px;
+    right: -7px;
   }
 }

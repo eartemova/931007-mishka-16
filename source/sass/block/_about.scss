@@ -6,6 +6,10 @@
   margin-bottom: 16px;
 }
 
+.about__container {
+  @include container;
+}
+
 .about__list {
   list-style: none;
   padding: 0;
@@ -141,7 +145,10 @@
   .about {
     margin-top: 84px;
     margin-right: 0;
-    padding-left: 170px;
+  }
+
+  .about__container {
+    padding-left: 220px;
   }
 
   .about__list {

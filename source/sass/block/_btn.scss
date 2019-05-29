@@ -35,14 +35,6 @@
   }
 }
 
-/*--------------------------------- BUTTONS/КНОПКИ - ПЛАНШЕТ ---------------------------------------*/
-
-@media (min-width: $tablet-width) {
-  .btn {
-    width: 292px;
-  }
-}
-
 .btn__slider {
   display: inline-flex;
   width: 130px;
@@ -69,6 +61,14 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+/*--------------------------------- BUTTONS/КНОПКИ - ПЛАНШЕТ ---------------------------------------*/
+
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 292px;
   }
 }
 

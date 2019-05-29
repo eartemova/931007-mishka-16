@@ -2,19 +2,6 @@
 .reviews {
   padding-top: 24px;
   position: relative;
-
-  &::after {
-    @include pseudo;
-    background-image: url("../img/bg-zigzag-line.svg");
-    bottom: -52px;
-    height: 7px;
-    width: 100%;
-    fill: #f9f9f9;
-    background-size: 320px 7px;
-    background-repeat: repeat-x;
-    background-position: center bottom;
-    transform: rotate(180deg);
-  }
 }
 
 .reviews__body {
@@ -70,7 +57,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 31px;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 /*--------------------------------- REVIEWS / ОТЗЫВЫ - ПЛАНШЕТ ---------------------------------------*/
@@ -84,22 +71,14 @@
     width: 768px;
     margin: 0 auto;
 
-    &::after {
-      bottom: -87px;
-      height: 20px;
-      width: 768px;
-      background-size: 768px 20px;
-      transform: rotate(180deg);
-    }
-
     &::before {
       @include pseudo;
       width: 350px;
-      height: 475px;
+      height: 459px;
       top: 0;
       left: 0;
       background: #f9f9f9 url("../img/review@1x.jpg") no-repeat;
-      background-size: 350px 475px;
+      background-size: 350px 459px;
     }
   }
 
@@ -178,14 +157,6 @@
     width: 1050px;
     padding-top: 68px;
     margin-top: 80px;
-
-    &::after {
-      bottom: -93px;
-      height: 24px;
-      width: 1050px;
-      background-size: 1054px 24px;
-      transform: rotate(180deg);
-    }
 
     &::before {
       background-size: 350px 457px;

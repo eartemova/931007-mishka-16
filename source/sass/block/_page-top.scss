@@ -27,7 +27,7 @@
   }
 
   &--catalog {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 }
 
@@ -55,8 +55,8 @@
     &--catalog,
     &--form {
       margin-top: -80px;
-      padding-top: 96px;
-      padding-bottom: 94px;
+      padding-top: 82px;
+      padding-bottom: 78px;
 
       &::after {
         @include pseudo;
@@ -97,6 +97,7 @@
     &--catalog,
     &--form {
       min-height: 255px;
+      padding-top: 70px;
 
       &::after {
         bottom: -19px;
